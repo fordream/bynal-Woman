@@ -8,10 +8,10 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
+import app.bynal.woman.R;
 
 import com.acv.libs.base.LibsBaseAdialog;
 import com.acv.libs.base.util.ByUtils;
-import com.bynal.libs.R;
 
 public abstract class MbaseAdialog extends LibsBaseAdialog {
 	public int getAnimationOpen() {
