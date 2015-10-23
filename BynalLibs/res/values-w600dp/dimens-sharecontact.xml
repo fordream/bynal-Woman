@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="sharcontact_listheight">@dimen/dimen_150dp</dimen>
+    <dimen name="sharcontact_textwidth">450dp</dimen>
+    <dimen name="sharcontact_textheight">48dp</dimen>
+    <dimen name="sharcontact_textheight_2">150dp</dimen>
+    <dimen name="sharcontact_textsize">18dp</dimen>
+    <dimen name="sharcontact_textwidth_button">255dp</dimen>
+    <dimen name="sharcontact_textheight_button">71dp</dimen>
+    <dimen name="sharcontact_space">18dp</dimen>
+
+    <!-- item -->
+    <dimen name="sharcontact_itemwidth">562dp</dimen>
+    <dimen name="sharcontact_itemwidth_text">515dp</dimen>
+    <dimen name="sharcontact_itemwidth_checkbox">46dp</dimen>
+    <dimen name="sharcontact_itemwidth_space">9dp</dimen>
+
+</resources>

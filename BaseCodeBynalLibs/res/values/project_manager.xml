@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="header_project_favorite">お気に入りプロジェクト</string>
+	<string name="header_project_support">支援したプロジェクト</string>
+    <string name="header_project_post">投稿したプロジェクト</string>
+    <string name="header_project_support_detail">支援額明細</string>
+    <string name="header_project_support_detail_monny">円</string>
+    <string name="header_project_delivery">エンジェル一覧</string>
+    <string name="header_project_delivery_detail">delivery detail</string>
+    <string name="header_project_all">プロジェクト一覧</string>
+    <string name="menu_project_favorite">お気に入りプロジェクト</string> 
+	<string name="menu_project_support">支援したプロジェクト</string>
+    <string name="menu_project_post">投稿したプロジェクト</string>
+    <string name="menu_project_all">プロジェクト一覧</string>
+    <string name="project_post_date_end">終了</string>
+    <string name="project_changevideo_from_camera">カメラから投稿する</string>
+	<string name="project_changevideo_from_gallery">カメラロールから投稿する</string>
+	<string name="project_novideo_gallery">No video on gallery</string>
+	<string name="project_delivery_monny">¥</string>
+	<string name="project_delivery_zip">〒</string>
+	<string name="project_post_status">公開中</string>
+	<string name="project_post_date_modified">最終更新日時:</string>
+	<string name="project_post_date_created">申請日時:</string>
+	<string name="project_post_delete_confirm">このプロジェクトを削除しますか？</string>
+	
+	<string name="video_title_err">ERROR</string>
+	<string name="video_camera_err">Camera Error!</string>
+	<string name="video_internet_err">ネットワークに接続出来ません</string>
+	<string name="video_up_youtube_done">アップロードが完了しました。動画はプロジェクト詳細画面の一番上に表示されます。</string>
+	<string name="video_up_youtube_err">Youtubeに動画をアップロード出来ません。３０秒を待ってから再アップしてください。</string>
+	<string name="video_up_server_err">動画はBynalサーバーにアップロードする前にYoutubeにアップロードしてください。</string>
+	<string name="video_up_server_done">動画を更新しました。</string>
+	
+	<string name="error_pm_favorite_return_null">お気に入りプロジェクトがありません。</string>
+	<string name="error_pm_angel_return_null">支援したプロジェクトがありません。</string>
+	<string name="error_pm_post_return_null">投稿したプロジェクトがありません。</string>
+	<string name="error_pm_all_return_null">プロジェクトがありません。</string>
+	
+	<string name="error_pm_delivery_return_null">現在このプロジェクトの支援者はいません。</string>
+    
+</resources>

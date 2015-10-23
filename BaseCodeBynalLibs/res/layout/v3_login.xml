@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sharecontact_bg"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <org.acv.bynal.views.HeaderView
+        android:id="@+id/headerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </org.acv.bynal.views.HeaderView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:orientation="horizontal" >
+
+        <org.acv.bynal.views.BaseBoldRadioButton
+            android:id="@+id/radio0"
+            android:layout_width="@dimen/dimen_74dp"
+            android:layout_height="@dimen/dimen_25dp"
+            android:background="@drawable/v3_login"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_1dp"
+            android:text="@string/menu_home_Login"
+            android:textColor="@color/unchecked"
+            android:textSize="@dimen/dimen_12dp" />
+
+        <org.acv.bynal.views.BaseBoldRadioButton
+            android:id="@+id/radio1"
+            android:layout_width="@dimen/dimen_74dp"
+            android:layout_height="@dimen/dimen_25dp"
+            android:background="@drawable/v3_register"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_1dp"
+            android:text="会員登録"
+            android:textSize="@dimen/dimen_12dp" />
+    </RadioGroup>
+    <!--
+    <a.com.acv.bynal.v3.NoScollViewPager
+        android:id="@+id/noscrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </a.com.acv.bynal.v3.NoScollViewPager>
+    -->
+
+    <FrameLayout
+        android:id="@+id/frame_noscrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <a.com.acv.bynal.v3.views.V3LoginView
+            android:id="@+id/v3login"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </a.com.acv.bynal.v3.views.V3LoginView>
+
+        <a.com.acv.bynal.v3.views.V3RegisterView
+            android:id="@+id/v3register"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </a.com.acv.bynal.v3.views.V3RegisterView>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pj_detail_report_m_main"
+    android:background="@drawable/v3_bg">
+	<org.acv.bynal.views.HeaderView
+        android:id="@+id/pj_detail_report_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </org.acv.bynal.views.HeaderView>
+	<org.acv.bynal.views.BaseTextView
+	    android:id="@+id/pj_err_message"
+	    style="@style/error_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/pj_detail_report_header"
+	    android:gravity="left"
+	    android:padding="@dimen/dimen_10dp"
+	    android:text="err"
+	    android:visibility="gone" />
+		<ListView
+		    android:id="@+id/listview_report"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/pj_err_message"
+		    android:divider="@null"
+        	android:listSelector="@drawable/transfer"
+		    android:dividerHeight="0dp" >
+
+		</ListView>
+</RelativeLayout>

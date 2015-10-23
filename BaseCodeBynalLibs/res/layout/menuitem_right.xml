@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|left"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_38dp"
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/menu_img_left"
+            android:layout_width="@dimen/dimen_10dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/menu_img_header"
+                    android:layout_width="@dimen/dimen_24dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    />
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    android:id="@+id/menutextview_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="TextView"
+                    android:paddingLeft="@dimen/dimen_12dp"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/dimen_12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/profile_menu_border"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menusub"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:divider="@null"
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/menu_img_child_left"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/menu_img"
+                    android:layout_width="@dimen/dimen_12dp"
+                    android:layout_height="@dimen/dimen_12dp"
+                     />
+
+                <org.acv.bynal.views.BaseTextView
+                    android:id="@+id/menutextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:paddingLeft="@dimen/dimen_12dp"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/dimen_12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/linearLayout1"
+                android:background="@drawable/profile_menu_border"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

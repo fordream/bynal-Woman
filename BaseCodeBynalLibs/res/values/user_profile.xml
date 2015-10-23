@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="header_profile">プロフィール編集</string>
+	<string name="header_profile_changepass">パスワード変更</string>
+    <string name="header_profile_unregister">退会</string>
+    <string name="menu_profile_changepass">パスワード変更</string>
+    <string name="menu_profile_unregister">退会</string>
+    <string name="change_pass_is_blank">パスワードを入力してください。 \nパスワードを変更できませんでした。もう一度入力してください。</string>
+	<string name="change_pass_passconfirm_err">新しいパスワード（確認用）が一致しません。正しく入力してください。 \nパスワードを変更できませんでした。もう一度入力してください。</string>
+	<string name="change_pass_err">パスワードを変更できませんでした。</string>
+	<string name="change_pass_ok">パスワードを変更しました。</string>
+	<string name="profile_update_ok">プロフィールを保存しました</string>
+	<string name="profile_changeimg_from_camera">カメラから投稿する</string>
+	<string name="profile_changeimg_from_gallery">カメラロールから投稿する</string>
+	<string name="profile_sex_man">男</string>
+	<string name="profile_sex_woman">女 </string>
+	<string name="unregister_confirm">退会手続き \nご利用いただき誠にありがとうございました。 \nBYNAL WOMANをご愛顧いただき、深く感謝申し上げます。</string>
+	
+	<!-- validate update profile -->
+	<string name="validate_deli_name">受取人氏名を入力してください。\n</string><!-- 受取人氏名を入力してください。 -->
+	<string name="validate_deli_zip">郵便番号を入力してください。\n</string><!-- 郵便番号を入力してください。 -->
+	<string name="validate_deli_address">配送先住所を入力してください。\n</string><!-- 配送先住所を入力してください。 -->
+	<string name="validate_deli_phone">連絡先を入力してください。\n</string><!-- 連絡先を入力してください。 -->
+	<string name="validate_user_name_null">ユーザ名を入力してください。\n</string><!-- ユーザ名を入力してください。 -->
+	<string name="validate_user_name_len">ユーザ名が長過ぎます。半角20文字、全角10文字以内で入力してください。\n</string>
+	<string name="validate_user_name_match">ユーザ名に半角記号は使用できません。\n</string>
+	<string name="validate_user_name_yomi_len">ユーザ名（読み）が長過ぎます。\n</string>
+	<string name="validate_biography_len">自己紹介が長過ぎます。\n</string>
+	<string name="validate_hometown_len">出身地が長過ぎます。\n</string>
+	<string name="validate_job_len">職業が長過ぎます。\n</string>
+	<string name="validate_history1_len">経歴１が長過ぎます。\n</string>
+	<string name="validate_history2_len">経歴２が長過ぎます。\n</string>
+	<string name="validate_history3_len">経歴３が長過ぎます。\n</string>
+	<string name="validate_user_url1_match">URL1が正しくありません。正しいＵＲＬを入力してください。\n</string>
+	<string name="validate_user_url1_len">URL1が長過ぎます。\n</string>
+	<string name="validate_user_url2_match">URL2が正しくありません。正しいＵＲＬを入力してください。\n</string>
+	<string name="validate_user_url2_len">URL2が長過ぎます。\n</string>
+	<string name="validate_user_url3_match">URL3が正しくありません。正しいＵＲＬを入力してください。\n</string>
+	<string name="validate_user_url3_len">URL3が長過ぎます。\n</string>
+	
+</resources>

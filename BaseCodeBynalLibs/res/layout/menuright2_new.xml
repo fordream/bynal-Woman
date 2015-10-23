@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right|top"
+    android:id="@+id/menuright_m_main"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:id="@+id/close_menu"
+	    android:layout_width="@dimen/dimen_100dp"
+	    android:layout_height="match_parent"
+	    android:gravity="left"
+	    android:orientation="vertical" >
+	 </LinearLayout>
+	 <LinearLayout
+        android:id="@+id/menu_header"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top|left"
+        android:background="@drawable/menuright_detail_shadow"
+        android:paddingLeft="@dimen/dimen_6dp"
+        android:orientation="vertical" >
+        	<!-- menu1 -->
+        	<LinearLayout
+        	    android:id="@+id/menu_right1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+		
+		        <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/dimen_37dp" >
+		
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="@dimen/dimen_37dp"
+		                android:layout_marginLeft="@dimen/dimen_8dp"
+		                android:gravity="center_vertical" >
+		
+		                <ImageView
+		                    android:id="@+id/menu_img_header1"
+		                    android:layout_width="@dimen/dimen_24dp"
+		                    android:layout_height="@dimen/dimen_24dp"
+		                    android:background="@drawable/pm_menu_star" />
+		
+		                <org.acv.bynal.views.BaseBoldTextView
+		                    android:id="@+id/menutextview_header1"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/dimen_11dp"
+		                    android:gravity="center|left"
+		                    android:text="お気に入りプロジェクト"
+		                    android:textColor="#666666"
+		                    android:textSize="@dimen/dimen_12dp" />
+		            </LinearLayout>
+		
+		            <LinearLayout 
+		                android:layout_width="match_parent"
+		                android:layout_height="1dp"
+		                android:layout_alignParentBottom="true"
+		                android:layout_alignParentLeft="true"
+		                android:background="@drawable/profile_menu_border"
+		                android:orientation="vertical" >
+		            </LinearLayout>
+		        </RelativeLayout>
+		    </LinearLayout>
+		    <!-- menu2 -->   
+           <LinearLayout
+                android:id="@+id/menu_right2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+		        <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/dimen_37dp" >
+		
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="@dimen/dimen_37dp"
+		                android:layout_marginLeft="@dimen/dimen_8dp"
+		                android:gravity="center_vertical" >
+		
+		                <ImageView
+		                    android:id="@+id/menu_img_header2"
+		                    android:layout_width="@dimen/dimen_24dp"
+		                    android:layout_height="@dimen/dimen_24dp"
+		                    android:background="@drawable/pm_menu_circle" />
+		
+		                <org.acv.bynal.views.BaseBoldTextView
+		                    android:id="@+id/menutextview_header2"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/dimen_11dp"
+		                    android:gravity="center|left"
+		                    android:text="支援したプロジェクト"
+		                    android:textColor="#666666"
+		                    android:textSize="@dimen/dimen_12dp" />
+		            </LinearLayout>
+		
+		            <LinearLayout 
+		                android:layout_width="match_parent"
+		                android:layout_height="1dp"
+		                android:layout_alignParentBottom="true"
+		                android:layout_alignParentLeft="true"
+		                android:background="@drawable/profile_menu_border"
+		                android:orientation="vertical" >
+		            </LinearLayout>
+		        </RelativeLayout>
+		    </LinearLayout>
+		    <!-- menu3 -->  
+		  	<LinearLayout
+                android:id="@+id/menu_right3"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+		        <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/dimen_37dp" >
+		
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="@dimen/dimen_37dp"
+		                android:layout_marginLeft="@dimen/dimen_8dp"
+		                android:gravity="center_vertical" >
+		
+		                <ImageView
+		                    android:id="@+id/menu_img_header3"
+		                    android:layout_width="@dimen/dimen_24dp"
+		                    android:layout_height="@dimen/dimen_24dp"
+		                    android:background="@drawable/pm_menu_arrow" />
+		
+		                <org.acv.bynal.views.BaseBoldTextView
+		                    android:id="@+id/menutextview_header3"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/dimen_11dp"
+		                    android:gravity="center|left"
+		                    android:text="投稿したプロジェクト"
+		                    android:textColor="#666666"
+		                    android:textSize="@dimen/dimen_12dp" />
+		            </LinearLayout>
+		
+		            <LinearLayout 
+		                android:layout_width="match_parent"
+		                android:layout_height="1dp"
+		                android:layout_alignParentBottom="true"
+		                android:layout_alignParentLeft="true"
+		                android:background="@drawable/profile_menu_border"
+		                android:orientation="vertical" >
+		            </LinearLayout>
+		        </RelativeLayout>
+		    </LinearLayout>
+            <!-- menu3 -->  
+            <!-- menu4 -->  
+		  	<LinearLayout
+                android:id="@+id/menu_right4"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+		        <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/dimen_37dp" >
+		
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="@dimen/dimen_37dp"
+		                android:layout_marginLeft="@dimen/dimen_8dp"
+		                android:gravity="center_vertical" >
+		
+		                <ImageView
+		                    android:id="@+id/menu_img_header4"
+		                    android:layout_width="@dimen/dimen_24dp"
+		                    android:layout_height="@dimen/dimen_24dp"
+		                    android:background="@drawable/pm_menu_all" />
+		
+		                <org.acv.bynal.views.BaseBoldTextView
+		                    android:id="@+id/menutextview_header4"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="@dimen/dimen_11dp"
+		                    android:gravity="center|left"
+		                    android:text="プロジェクト一覧"
+		                    android:textColor="#666666"
+		                    android:textSize="@dimen/dimen_12dp" />
+		            </LinearLayout>
+		
+		            <LinearLayout 
+		                android:layout_width="match_parent"
+		                android:layout_height="1dp"
+		                android:layout_alignParentBottom="true"
+		                android:layout_alignParentLeft="true"
+		                android:background="@drawable/menu_m1"
+		                android:orientation="vertical" >
+		            </LinearLayout>
+		        </RelativeLayout>
+		    </LinearLayout>
+            <!-- menu4 -->  
+                
+     </LinearLayout>   
+	
+
+</LinearLayout>

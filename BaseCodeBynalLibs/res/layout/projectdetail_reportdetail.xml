@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pj_detail_reportdetail_m_main"
+    android:background="@drawable/v3_bg">
+	<org.acv.bynal.views.HeaderView
+        android:id="@+id/pj_detail_reportdetail_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </org.acv.bynal.views.HeaderView>
+    <LinearLayout
+        android:id="@+id/reportdetail_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pj_detail_reportdetail_header"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dimen_10dp" >
+	    <ListView
+	    android:id="@+id/listview_reportdetail"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:visibility="invisible"
+	    android:layout_marginBottom="@dimen/dimen_50dp"
+	    android:divider="@null">
+    	</ListView>
+    </LinearLayout>    
+
+	
+
+    <RelativeLayout
+        android:id="@+id/reportdetail_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:paddingTop="5dp" >
+
+        <org.acv.bynal.views.BaseEditText
+            android:id="@+id/reportdetail_footer_text"
+            android:layout_width="@dimen/dimen_300dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:background="@drawable/detail_report_box2"
+            android:ems="10"
+            android:gravity="top"
+            android:textSize="@dimen/dimen_15dp"
+            android:padding="@dimen/dimen_10dp"
+            android:text="" >
+        </org.acv.bynal.views.BaseEditText>
+        
+        <LinearLayout
+        android:id="@+id/reportdetail_footer_btn"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:gravity="right"
+        android:layout_alignRight="@+id/reportdetail_footer_text"
+        android:orientation="vertical"
+        android:background="@null"
+        android:paddingTop="5dp" >
+        </LinearLayout>
+
+        <!-- <org.acv.bynal.views.BaseTextView
+            android:id="@+id/reportdetail_footer_btn"
+            android:layout_width="@dimen/dimen_135dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:textSize="@dimen/dimen_15dp"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:background="@drawable/btn_red"
+            android:text="コメントする"
+            android:gravity="center" /> -->
+    </RelativeLayout>
+</RelativeLayout>

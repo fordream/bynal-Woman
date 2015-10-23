@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pj_detail_tag_m_main"
+    android:background="@drawable/v3_bg"
+    android:orientation="vertical" >
+    <org.acv.bynal.views.HeaderView
+        android:id="@+id/pj_detail_tag_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </org.acv.bynal.views.HeaderView>
+	<ListView
+        android:id="@+id/listview_tag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@drawable/transfer" 
+        android:layout_below="@+id/pj_detail_tag_header"
+        android:paddingLeft="@dimen/dimen_12dp"
+        android:paddingTop="@dimen/dimen_12dp"
+        android:layout_above="@+id/tagpost_footer" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/tagpost_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:paddingBottom="@dimen/dimen_20dp" ><!-- dimen_76dp -->
+
+       <org.acv.bynal.views.BaseEditText
+                android:id="@+id/tagpost_footer_text"
+                style="@style/bynal_edit_text_height_27"
+                android:layout_width="@dimen/dimen_220dp"
+            	android:layout_height="@dimen/dimen_36dp"
+                android:ems="10"
+                android:maxLength="13"
+                android:gravity="center|left"
+                android:singleLine="true" />
+
+        <org.acv.bynal.views.BaseBoldTextView
+            android:id="@+id/tagpost_footer_btn"
+            style="@style/v3_button"
+            android:layout_width="@dimen/dimen_68dp"
+            android:layout_height="@dimen/dimen_36dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:text="送信"
+            android:textSize="@dimen/dimen_18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

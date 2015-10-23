@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:id="@+id/pj_detail_header_action"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_44dp"
+            android:background="#fffcda"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_78dp"
+                android:layout_height="@dimen/dimen_44dp"
+                android:gravity="center_horizontal|center_vertical" >
+
+                <ImageView
+                    android:id="@+id/project_detail_share"
+                    android:layout_width="@dimen/dimen_28dp"
+                    android:layout_height="@dimen/dimen_28dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/project_detail_share_xml" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_1dp"
+                android:layout_height="@dimen/dimen_34dp"
+                android:gravity="center_horizontal|center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1_2"
+                    android:layout_width="@dimen/dimen_1dp"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:layout_marginTop="@dimen/dimen_7dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/project_detail_hr" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_78dp"
+                android:layout_height="@dimen/dimen_44dp"
+                android:gravity="center_horizontal|center_vertical" >
+
+                <ImageView
+                    android:id="@+id/project_detail_money"
+                    android:layout_width="@dimen/dimen_28dp"
+                    android:layout_height="@dimen/dimen_28dp"
+                    android:src="@drawable/project_detail_money_xml" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_1dp"
+                android:layout_height="@dimen/dimen_34dp"
+                android:gravity="center_horizontal|center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1_2"
+                    android:layout_width="@dimen/dimen_1dp"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:layout_marginTop="@dimen/dimen_7dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/project_detail_hr" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_78dp"
+                android:layout_height="@dimen/dimen_44dp"
+                android:gravity="center_horizontal|center_vertical" >
+
+                <ImageView
+                    android:id="@+id/project_detail_setlike"
+                    android:layout_width="@dimen/dimen_28dp"
+                    android:layout_height="@dimen/dimen_28dp"
+                    android:src="@drawable/project_detail_setlike_xml" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_1dp"
+                android:layout_height="@dimen/dimen_34dp"
+                android:gravity="center_horizontal|center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1_2"
+                    android:layout_width="@dimen/dimen_1dp"
+                    android:layout_height="@dimen/dimen_34dp"
+                    android:layout_marginTop="@dimen/dimen_7dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/project_detail_hr" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_78dp"
+                android:layout_height="@dimen/dimen_44dp"
+                android:gravity="center_horizontal|center_vertical" >
+
+                <ImageView
+                    android:id="@+id/project_detail_calendar"
+                    android:layout_width="@dimen/dimen_28dp"
+                    android:layout_height="@dimen/dimen_28dp"
+                    android:src="@drawable/project_detail_calendar_xml" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_320dp"
+            android:layout_height="@dimen/dimen_4dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="@dimen/dimen_320dp"
+                android:layout_height="@dimen/dimen_4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/share_shadow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pj_detail_header_action"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/project_detail_image"
+            android:layout_width="@dimen/dimen_300dp"
+            android:layout_height="@dimen/dimen_200dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/noimg"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/detail_display"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:animationCache="false" >
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- aaa -->
+
+    <RelativeLayout
+        android:id="@+id/share_block"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/message_5"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/share_block_content"
+            android:layout_width="@dimen/dimen_186dp"
+            android:layout_height="@dimen/dimen_210dp"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_marginTop="@dimen/dimen_38dp"
+            android:background="@drawable/detail_share_bg"
+            android:gravity="center|bottom" >
+
+            <LinearLayout
+                android:id="@+id/mesage_block_content_1"
+                android:layout_width="@dimen/dimen_164dp"
+                android:layout_height="@dimen/dimen_198dp"
+                android:gravity="center|left"
+                android:orientation="vertical" >
+
+                <!-- android:background="@drawable/detail_share_fb" -->
+
+                <org.acv.bynal.views.BaseTextView
+                    android:id="@+id/share001"
+                    android:layout_width="@dimen/dimen_164dp"
+                    android:layout_height="@dimen/dimen_32dp"
+                    android:background="@drawable/xml_detail_share_1"
+                    android:gravity="center"
+                    android:text="Facebook共有"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_13dp" />
+
+                <org.acv.bynal.views.BaseTextView
+                    android:id="@+id/share002"
+                    android:layout_width="@dimen/dimen_164dp"
+                    android:layout_height="@dimen/dimen_32dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                      android:background="@drawable/xml_detail_share_2"
+                    android:gravity="center"
+                    android:text="Twitter共有"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_13dp" />
+
+                <org.acv.bynal.views.BaseTextView
+                    android:id="@+id/share003"
+                    android:layout_width="@dimen/dimen_164dp"
+                    android:layout_height="@dimen/dimen_32dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@drawable/xml_detail_share_3"
+                    android:gravity="center"
+                    android:text="はてなブックマークに追加"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_13dp" />
+
+                <org.acv.bynal.views.BaseTextView
+                    android:id="@+id/share004"
+                    android:layout_width="@dimen/dimen_164dp"
+                    android:layout_height="@dimen/dimen_32dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                     android:background="@drawable/xml_detail_share_4"
+                    android:gravity="center"
+                    android:text="メールで共有"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_13dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- bbb -->
+
+</RelativeLayout>

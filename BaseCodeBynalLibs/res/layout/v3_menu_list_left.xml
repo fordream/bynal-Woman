@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v3_menu_background_open"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mMain1"
+        android:layout_width="@dimen/dimen_275dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/menuslide_header"
+            android:layout_width="@dimen/dimen_275dp"
+            android:layout_height="@dimen/dimen_45dp"
+            android:background="@drawable/menu_bg_header"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/menuslide_header_img"
+                android:layout_width="@dimen/dimen_179dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:background="@drawable/v3_home_logo"
+                android:orientation="horizontal" >
+            </ImageView>
+        </LinearLayout>
+
+        <ListView
+            android:scrollbars="none"
+            android:scrollbarThumbVertical="@drawable/transfer"
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/menuslide_header"
+            android:background="@android:color/white"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/transfer" >
+        </ListView>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/dimen_17dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/listView1"
+            android:background="@drawable/shadow" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuitem_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|left"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/menu_img_left"
+            android:layout_width="@dimen/dimen_10dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/menu_img_header"
+                    android:layout_width="@dimen/dimen_32dp"
+                    android:layout_height="@dimen/dimen_50dp" />
+
+                <org.acv.bynal.views.BaseTextView
+                    android:id="@+id/menutextview_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="TextView"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/dimen_15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/menu_m1"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menusub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/menu_sup_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:divider="@null"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout04"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/ImageView04"
+                        android:layout_width="@dimen/dimen_32dp"
+                        android:layout_height="@dimen/dimen_50dp" />
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:id="@+id/BaseTextView04"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_home_contact_us"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/linearLayout1"
+                    android:background="@drawable/menu_m1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_sup_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:divider="@null"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout03"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="@dimen/dimen_32dp"
+                        android:layout_height="@dimen/dimen_50dp" />
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:id="@+id/BaseTextView03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_home_about"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/linearLayout1"
+                    android:background="@drawable/menu_m1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_sup_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:divider="@null"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="@dimen/dimen_32dp"
+                        android:layout_height="@dimen/dimen_50dp" />
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:id="@+id/BaseTextView02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_home_help"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/linearLayout1"
+                    android:background="@drawable/menu_m1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_sup_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:divider="@null"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/v3home_pager_have_right"
+                        android:layout_width="@dimen/dimen_32dp"
+                        android:layout_height="@dimen/dimen_50dp" />
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:id="@+id/BaseTextView01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_home_x1"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/linearLayout1"
+                    android:background="@drawable/menu_m1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_sup_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:divider="@null"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/menu_img_child_left"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/menu_img"
+                        android:layout_width="@dimen/dimen_32dp"
+                        android:layout_height="@dimen/dimen_50dp" />
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:id="@+id/menutextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_home_x2"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/linearLayout1"
+                    android:background="@drawable/menu_m1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_sup_6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp"
+            android:divider="@null"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/menu_img_child_left2"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/menu_img2"
+                        android:layout_width="@dimen/dimen_32dp"
+                        android:layout_height="@dimen/dimen_50dp" />
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:id="@+id/menutextView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_home_x3"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/dimen_15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/linearLayout1"
+                    android:background="@drawable/menu_m1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

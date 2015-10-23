@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="button1">button1</string>
+    <string name="button2">button2</string>
+    <string name="domain_prompt">Choose a news source</string>
+    <string name="yt_account_prompt">Choose your Google/YouTube account</string>
+    <string name="dev_key">AI39si71_lZ3b6sXUzxHn6pu364baHt7NadN79RL6dBeO1kxlpfeiIhnYbCqvbxZ3tZ8M1-ThrPDk0GKJT9n121B5BGACMsrfQ</string>
+    <string name="client_id">675680360233-agev33n9gcf3qh9vqmv0f29k0sq3dd3t.apps.googleusercontent.com</string>
+    <string name="default_ytd_domain">demouploadvideo.appspot.com</string>
+    <string name="default_ytd_domain_name">Bynal Woman</string>
+</resources>

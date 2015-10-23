@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v3_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/detailsTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:background="#cc0033"
+        android:orientation="vertical" >
+
+        <org.acv.bynal.views.BaseBoldTextView
+            android:id="@+id/headertextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="ビデオアップロード"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dimen_18dp"
+            android:textStyle="bold" />
+
+        <org.acv.bynal.views.BaseBoldTextView
+            android:id="@+id/home_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/home_logo"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/headerbutton1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/dimen_45dp"
+            android:layout_height="@dimen/dimen_45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="@dimen/dimen_10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back_xml" />
+
+        <ImageButton
+            android:id="@+id/headerbutton2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/dimen_45dp"
+            android:layout_height="@dimen/dimen_45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="@dimen/dimen_10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/upload_xml" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/detailsTop"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="@dimen/dimen_300dp"
+                android:layout_height="@dimen/dimen_195dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/noimg"
+                android:scaleType="fitXY" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <org.acv.bynal.views.BaseBoldTextView
+                android:id="@+id/submitButton"
+                android:layout_width="@dimen/dimen_195dp"
+                android:layout_height="@dimen/dimen_37dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:background="@drawable/button_pm_postvideo__xml"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dimen_18dp" />
+
+            <org.acv.bynal.views.ProgressView
+                android:visibility="gone"
+                android:id="@+id/project_post_viewo_progress_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v3_bg"
+    android:orientation="vertical"
+    android:scrollbarSize="0dp"
+    android:scrollbars="none" >
+
+    <org.acv.bynal.views.HeaderView
+        android:id="@+id/headerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </org.acv.bynal.views.HeaderView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ProgressBar
+            android:id="@+id/mprogressBar_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <a.com.acv.bynal.v3.views.V3HomeSession1View
+            android:id="@+id/v3home_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/v3home_step2_open" >
+        </a.com.acv.bynal.v3.views.V3HomeSession1View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/v3home_step2_open" >
+
+            <LinearLayout
+                android:id="@+id/mx"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <!-- <ImageButton
+                android:id="@+id/v3home_pager_have_left"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_alignBottom="@+id/mx"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:background="@null"
+                android:padding="@dimen/dimen_10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/xml_have_left"
+                android:visibility="gone" /> -->
+            <ImageButton
+                android:id="@+id/v3home_pager_have_left"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_alignBottom="@+id/mx"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:background="@null"
+                android:padding="@dimen/dimen_0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/xml_have_left"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/v3home_pager_have_right"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_above="@+id/mx"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:background="@null"
+                android:padding="@dimen/dimen_0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/xml_have_right"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/v3home_step2_open"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/xml_home_session_chooser_bg" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/dimen_38dp"
+                android:layout_height="@dimen/dimen_38dp"
+                android:background="@null"
+                android:padding="@dimen/dimen_9dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_session_chooser_icon_1_normal" />
+
+            <!-- 新着プロジェクト -->
+
+            <org.acv.bynal.views.BaseBoldTextView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="新着プロジェクト"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_13dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/v3home_step2_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/v3_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/v3home_step2_close"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38dp"
+                android:background="@drawable/xml_home_session_chooser_bg" >
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="@dimen/dimen_38dp"
+                    android:layout_height="@dimen/dimen_38dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"
+                    android:padding="@dimen/dimen_9dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/home_session_chooser_icon_2_normal" />
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="新着プロジェクト"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_13dp" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/v3home_step2_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:listSelector="@drawable/transfer" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

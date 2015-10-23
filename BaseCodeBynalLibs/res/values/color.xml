@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="v3_3333333">#333333</color>
+    <color name="unchecked">#cc0033</color>
+    <color name="home_session_chooser_bg">#993333</color>
+    <color name="home_session_chooser_bg_selected">#9933cc</color>
+
+</resources>

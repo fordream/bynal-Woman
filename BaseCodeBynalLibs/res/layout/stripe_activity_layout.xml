@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v3_bg" >
+	<RelativeLayout
+		    android:id="@+id/header_main_content"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/dimen_45dp"
+		    android:background="#cc0033"
+		    android:orientation="vertical" >
+		
+		    <org.acv.bynal.views.BaseBoldTextView
+		        android:id="@+id/headertextView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:text="Service Stripe"
+		        android:textColor="#ffffff"
+        		android:textSize="@dimen/dimen_18dp"
+		        android:textStyle="bold" />
+		
+		    <org.acv.bynal.views.BaseBoldTextView
+		        android:id="@+id/home_logo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:background="@drawable/home_logo"
+		        android:text=""
+		        android:textColor="#ffffff"
+		        android:textStyle="bold"
+		        android:visibility="gone" />
+		
+		    <ImageButton
+		        android:id="@+id/headerbutton1"
+		        style="?android:attr/buttonStyleSmall"
+        		android:layout_width="@dimen/dimen_45dp"
+        		android:layout_height="@dimen/dimen_45dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:background="@null"
+		        android:padding="@dimen/dimen_10dp"
+		        android:src="@drawable/back_xml" />
+		
+		    <ImageButton
+		        android:id="@+id/headerbutton2"
+		        style="?android:attr/buttonStyleSmall"
+        		android:layout_width="@dimen/dimen_45dp"
+        		android:layout_height="@dimen/dimen_45dp"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:background="@null"
+		        android:padding="@dimen/dimen_10dp"
+		        android:visibility="gone"
+		        android:src="@drawable/upload_xml" />
+		</RelativeLayout>
+    
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_red"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/dimen_18dp"
+        android:text="SEND" />
+
+    <!-- <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/orderButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="$0.00" />-->
+	
+    
+
+    
+
+   
+	<LinearLayout
+        android:id="@+id/support_info"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_main_content"
+        android:layout_marginLeft="@dimen/dimen_21dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+	    android:layout_marginBottom="@dimen/dimen_20dp"
+        android:orientation="vertical" >
+
+        <org.acv.bynal.views.BaseBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="Support info"
+            android:textColor="#000000"
+            android:textSize="@dimen/dimen_14dp" />
+
+       <TextView
+	        android:id="@+id/treatCarTextField"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="0"
+	        android:textSize="@dimen/dimen_20dp"
+	        android:textColor="#000000"
+	        android:ems="10" />
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/card_num"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/support_info"
+        android:layout_marginLeft="@dimen/dimen_21dp"
+        android:orientation="vertical" >
+
+        <org.acv.bynal.views.BaseBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="Card Number"
+            android:textColor="#000000"
+            android:textSize="@dimen/dimen_14dp" />
+
+        <com.stripe.android.utils.CardNumberEditText
+	        android:id="@+id/numberTextField"
+	        android:layout_width="@dimen/dimen_200dp"
+	        android:layout_height="@dimen/dimen_40dp"
+	        android:layout_marginBottom="40dp"
+	        android:textSize="@dimen/dimen_18dp"
+	        android:inputType="number"
+	        android:ems="5" 
+	        android:hint="Credit card number"
+	        android:background="@drawable/v3_dittext"
+	        android:paddingLeft="@dimen/dimen_10dp"
+	        android:text="4242424242424242" >
+	    </com.stripe.android.utils.CardNumberEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/card_num"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+	        android:layout_width="@dimen/dimen_80dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/dimen_21dp"
+	        android:orientation="vertical" >
+	        <org.acv.bynal.views.BaseBoldTextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center|left"
+	            android:text="Exp Month"
+	            android:textColor="#000000"
+	            android:textSize="@dimen/dimen_14dp" />
+	
+	        <com.stripe.android.utils.MonthEditText
+		        android:id="@+id/expMonthTextField"
+		        android:layout_width="@dimen/dimen_40dp"
+		        android:layout_height="@dimen/dimen_40dp"
+		        android:ems="5"
+		        android:inputType="number"
+		        android:textSize="@dimen/dimen_18dp"
+		        android:background="@drawable/v3_dittext"
+		        android:paddingLeft="@dimen/dimen_10dp"
+		        android:maxLength="2"
+		        android:text="12" />
+        </LinearLayout>
+        <LinearLayout
+	        android:layout_width="@dimen/dimen_100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/dimen_21dp"
+	        android:orientation="vertical" >
+	        <org.acv.bynal.views.BaseBoldTextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center|left"
+	            android:text="Exp Year"
+	            android:textColor="#000000"
+	            android:textSize="@dimen/dimen_14dp" />
+	
+	         <com.stripe.android.utils.YearEditText
+		        android:id="@+id/expYearTextField"
+		        android:layout_width="@dimen/dimen_80dp"
+		        android:layout_height="@dimen/dimen_40dp"
+		        android:ems="5"
+		        android:inputType="number"
+		        android:textSize="@dimen/dimen_18dp"
+		        android:background="@drawable/v3_dittext"
+		        android:paddingLeft="@dimen/dimen_10dp"
+		        android:maxLength="4"
+		        android:text="2016"/>
+        </LinearLayout>
+        <LinearLayout
+	        android:layout_width="@dimen/dimen_80dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/dimen_21dp"
+	        android:orientation="vertical" >
+	        <org.acv.bynal.views.BaseBoldTextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center|left"
+	            android:text="CVC"
+	            android:textColor="#000000"
+	            android:textSize="@dimen/dimen_14dp" />
+	
+	         <com.stripe.android.utils.CVCNumberEditText
+		        android:id="@+id/cvcTextField"
+		        android:layout_width="@dimen/dimen_60dp"
+		        android:layout_height="@dimen/dimen_40dp"
+		        android:ems="5"
+		        android:inputType="number"
+		        android:textSize="@dimen/dimen_18dp"
+		        android:background="@drawable/v3_dittext"
+		        android:paddingLeft="@dimen/dimen_10dp"
+		        android:maxLength="3"
+		        android:text="123"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+</RelativeLayout>
+

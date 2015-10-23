@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v3_bg"
+    android:id="@+id/pj_detail_info_m_main"
+    android:orientation="vertical" >
+    <org.acv.bynal.views.HeaderView
+        android:id="@+id/pj_detail_info_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </org.acv.bynal.views.HeaderView>
+	<LinearLayout
+         	 android:id="@+id/main_content"
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent"
+	         android:layout_below="@+id/pj_detail_info_header"
+	         android:orientation="horizontal"
+	         android:layout_margin="12dp"
+	         android:background="@drawable/detail_info_box"
+	         android:visibility="invisible"
+	         android:weightSum="2" >
+		<LinearLayout
+	         android:layout_width="@dimen/dimen_85dp"
+	         android:layout_height="@dimen/dimen_86dp"
+	         android:layout_marginRight="@dimen/dimen_20dp"
+	         android:layout_marginLeft="@dimen/dimen_20dp"
+	         android:layout_marginTop="@dimen/dimen_20dp"
+	         android:background="@drawable/detail_bg_avatar">
+	         <ImageView
+			    android:id="@+id/image_project_profile"
+			    android:layout_width="@dimen/dimen_83dp"
+	            android:layout_height="@dimen/dimen_84dp"
+	            android:layout_marginLeft="@dimen/dimen_1dp"
+	            android:layout_marginTop="@dimen/dimen_1dp"
+	            android:src="@drawable/default_user_square2"
+	            android:visibility="visible"
+	            android:scaleType="fitXY" />
+	    </LinearLayout>
+		
+		<LinearLayout
+         	 android:id="@+id/right_block"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="@dimen/dimen_20dp"
+	         android:orientation="vertical">
+			<org.acv.bynal.views.BaseTextView
+	         	    android:id="@+id/project_info_name"
+	         	    android:layout_width="fill_parent"
+	         	    android:layout_height="wrap_content"
+	         	    android:gravity="left"
+	         	    android:textSize="@dimen/dimen_15dp"
+	         	    android:text="" />
+			<LinearLayout
+	         	 android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:orientation="horizontal">
+
+				<org.acv.bynal.views.BaseTextView
+				    android:id="@+id/project_info_sendmessage"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:gravity="left"
+				    android:textSize="@dimen/dimen_15dp"
+				    android:textColor="#b22222"
+				    android:text="メッセージを送る " />
+				<ImageView
+			        android:id="@+id/send_message"
+			        android:layout_width="@dimen/dimen_40dp"
+			        android:layout_height="@dimen/dimen_21dp"
+			        android:background="@drawable/pm_icon_send_message"
+			        android:gravity="left"
+			        android:scaleType="fitXY"/>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

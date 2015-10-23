@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/_menu_main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/_menu_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/_menu_left"
+        android:layout_width="@dimen/dimen_10dp"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/_menu_main_background1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/menuleft_listview"
+            android:layout_width="@dimen/dimen_275dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:listSelector="@null" >
+        </FrameLayout>
+
+        <RelativeLayout
+            android:background="@drawable/shadow"
+            android:layout_width="@dimen/dimen_15dp"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/menuleft_listview" >
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

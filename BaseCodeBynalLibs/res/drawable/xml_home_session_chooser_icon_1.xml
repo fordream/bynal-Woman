@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:drawable="@drawable/home_session_chooser_icon_1_selected"
+        android:state_pressed="true">
+    </item>
+    <item android:drawable="@drawable/home_session_chooser_icon_1_normal">
+    </item>
+
+</animation-list>

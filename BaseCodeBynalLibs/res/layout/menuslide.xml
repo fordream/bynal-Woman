@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/menu_main_content"
+            android:layout_width="@dimen/dimen_214dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu_bg"
+            android:orientation="vertical" >
+
+            <!-- android:background="@drawable/menu_top" -->
+
+            <LinearLayout
+                android:id="@+id/menuslide_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_55dp"
+                android:background="@drawable/menu_bg_header"
+                android:gravity="center|left"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/menuslide_header_img"
+                    android:layout_width="@dimen/dimen_119dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:orientation="horizontal" >
+                </ImageView>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/menu_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:listSelector="@drawable/transfer" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

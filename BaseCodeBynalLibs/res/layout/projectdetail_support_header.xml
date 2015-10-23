@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pj_detail_reportdetail_m_main">
+      <LinearLayout
+        android:id="@+id/support_info"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="@dimen/dimen_70dp"
+        android:background="@drawable/detail_support_box1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <LinearLayout
+	        android:id="@+id/col1"
+	        android:layout_width="@dimen/dimen_137dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        <!-- col1 -->
+	        <LinearLayout
+	           android:layout_width="@dimen/dimen_137dp"
+	           android:layout_height="wrap_content"
+	           android:gravity="center|left"
+	           android:orientation="horizontal"
+	           android:paddingLeft="@dimen/dimen_5dp"
+	           android:paddingTop="@dimen/dimen_5dp" >
+	           <ImageView
+	               android:id="@+id/support_icon1"
+	               android:layout_width="@dimen/dimen_20dp"
+	               android:layout_height="@dimen/dimen_20dp"
+	               android:background="@drawable/detail_support_icon1" />
+	           <org.acv.bynal.views.BaseBoldTextView
+	               android:id="@+id/support_point_txtname"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_marginLeft="@dimen/dimen_5dp"
+	               android:textColor="#000000"
+	               android:text="aaaaaaaaaa"
+	               android:singleLine="true"
+	               android:textSize="@dimen/dimen_15dp" />
+	        </LinearLayout>
+	        <LinearLayout
+	           android:layout_width="@dimen/dimen_210dp"
+	           android:layout_height="wrap_content"
+	           android:gravity="center|left"
+	           android:orientation="horizontal"
+	           android:paddingLeft="@dimen/dimen_5dp"
+	           android:paddingTop="@dimen/dimen_5dp" >
+	           <ImageView
+	               android:id="@+id/support_icon2"
+	               android:layout_width="@dimen/dimen_20dp"
+	               android:layout_height="@dimen/dimen_20dp"
+	               android:background="@drawable/detail_support_icon2" />
+	           <org.acv.bynal.views.BaseBoldTextView
+	               android:id="@+id/support_flag_txtname"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_marginLeft="@dimen/dimen_5dp"
+	               android:textColor="#000000"
+	               android:text=""
+	               android:singleLine="true"
+	               android:textSize="@dimen/dimen_15dp" />
+	       </LinearLayout>
+	       <!-- col1 -->
+        </LinearLayout>
+        <LinearLayout
+	        android:id="@+id/col2"
+	        android:layout_width="@dimen/dimen_80dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        <!-- col2 -->
+	        <LinearLayout
+	           android:layout_width="@dimen/dimen_80dp"
+	           android:layout_height="wrap_content"
+	           android:gravity="center|left"
+	           android:orientation="horizontal"
+	           android:paddingLeft="@dimen/dimen_5dp"
+	           android:paddingTop="@dimen/dimen_5dp" >
+	           <ImageView
+	               android:id="@+id/support_icon4"
+	               android:layout_width="@dimen/dimen_20dp"
+	               android:layout_height="@dimen/dimen_20dp"
+	               android:background="@drawable/detail_support_icon3" />
+	           <org.acv.bynal.views.BaseBoldTextView
+	               android:id="@+id/support_timer_txtname"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_marginLeft="@dimen/dimen_5dp"
+	               android:textColor="#000000"
+	               android:singleLine="true"
+	               android:textSize="@dimen/dimen_15dp" />
+	       </LinearLayout>
+	       <LinearLayout
+	           android:layout_width="@dimen/dimen_80dp"
+	           android:layout_height="wrap_content"
+	           android:gravity="center|left"
+	           android:orientation="horizontal"
+	           android:paddingLeft="@dimen/dimen_5dp"
+	           android:paddingTop="@dimen/dimen_5dp" >
+	           <ImageView
+	               android:id="@+id/support_icon5"
+	               android:layout_width="@dimen/dimen_20dp"
+	               android:layout_height="@dimen/dimen_20dp"
+	               android:background="@drawable/detail_support_icon4" />
+	           <org.acv.bynal.views.BaseBoldTextView
+	               android:id="@+id/support_number_txtname"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_marginLeft="@dimen/dimen_5dp"
+	               android:textColor="#000000"
+	               android:singleLine="true"
+	               android:textSize="@dimen/dimen_15dp" />
+	       </LinearLayout>
+	        <!-- col2 -->
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/col3"
+	        android:layout_width="@dimen/dimen_80dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        <!-- col3 -->
+	         <LinearLayout
+	           android:layout_width="@dimen/dimen_80dp"
+	           android:layout_height="wrap_content"
+	           android:gravity="center|left"
+	           android:orientation="horizontal"
+	           android:paddingLeft="@dimen/dimen_5dp"
+	           android:paddingTop="@dimen/dimen_5dp" >
+	           <ImageView
+	               android:id="@+id/support_icon3"
+	               android:layout_width="@dimen/dimen_20dp"
+	               android:layout_height="@dimen/dimen_20dp"
+	               android:background="@drawable/detail_support_icon5" />
+	           <org.acv.bynal.views.BaseBoldTextView
+	               android:id="@+id/support_percent_txtname"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_marginLeft="@dimen/dimen_5dp"
+	               android:textColor="#000000"
+	               android:singleLine="true"
+	               android:textSize="@dimen/dimen_15dp" />
+	       </LinearLayout>
+	        
+	        <!-- col3 -->
+	    </LinearLayout>    
+        
+        
+        
+       
+	</LinearLayout>
+</RelativeLayout>

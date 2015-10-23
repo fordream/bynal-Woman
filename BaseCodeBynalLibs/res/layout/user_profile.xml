@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <org.acv.bynal.views.HeaderView
+        android:id="@+id/headerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </org.acv.bynal.views.HeaderView>
+
+    <ScrollView
+        android:id="@+id/profile_main_s"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerView1"
+        android:orientation="vertical"
+        android:scrollbarSize="0dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/profile_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/prof_img_upload"
+                    android:layout_width="@dimen/dimen_140dp"
+                    android:layout_height="@dimen/dimen_140dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_72dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_user2_circle2" />
+
+                <ImageView
+                    android:id="@+id/mesage_main_icon_f"
+                    android:layout_width="@dimen/dimen_330dp"
+                    android:layout_height="@dimen/dimen_360dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/profile_bg_avatar_trim"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/profile_main_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prof_img_upload"
+                    android:layout_marginTop="@dimen/dimen_72dp"
+                    android:background="@drawable/v3_bg"
+                    android:orientation="vertical" >
+
+                    <!-- input text -->
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <org.acv.bynal.views.BaseBoldTextView
+                                android:id="@+id/user_name_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|left"
+                                android:text="ユーザ名 "
+                                android:textColor="#000000"
+                                android:textSize="@dimen/dimen_14dp" />
+
+                            <org.acv.bynal.views.BaseBoldTextView
+                                style="@style/star_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|left"
+                                android:typeface="normal" />
+                        </LinearLayout>
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/user_name"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/user_name_yomi_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="ユーザ名読み"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/user_name_yomi"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/biography_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="自己紹介"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/biography"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/sex_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="性別"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <RadioGroup
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:gravity="center_vertical|left"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:id="@+id/check_sex_male"
+                                android:layout_width="@dimen/dimen_106dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/dimen_10dp" >
+
+                                <RadioButton
+                                    android:id="@+id/sex_male"
+                                    android:layout_width="@dimen/dimen_10dp"
+                                    android:layout_height="@dimen/dimen_10dp"
+                                    android:background="@drawable/radio_button_uncheck"
+                                    android:button="@null"
+                                    android:text="" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dimen_40dp"
+                                    android:gravity="center_vertical" >
+
+                                    <org.acv.bynal.views.BaseTextView
+                                        android:id="@+id/sex_txt1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dimen_40dp"
+                                        android:gravity="center|left"
+                                        android:text="男"
+                                        android:textColor="#000000"
+                                        android:textSize="@dimen/dimen_12dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/check_sex_female"
+                                android:layout_width="@dimen/dimen_106dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/sex_female"
+                                    android:layout_width="@dimen/dimen_10dp"
+                                    android:layout_height="@dimen/dimen_10dp"
+                                    android:background="@drawable/radio_button_uncheck"
+                                    android:button="@null"
+                                    android:text="" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dimen_40dp"
+                                    android:gravity="center_vertical" >
+
+                                    <org.acv.bynal.views.BaseTextView
+                                        android:id="@+id/sex_txt2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dimen_40dp"
+                                        android:gravity="center|left"
+                                        android:padding="@dimen/dimen_0dp"
+                                        android:text="女 "
+                                        android:textColor="#000000"
+                                        android:textSize="@dimen/dimen_12dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/birthday_year_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="誕生日"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/birthday_year"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/hometown_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="出身地"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/hometown"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/job_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="仕事"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/job"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/history1_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="経歴1"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/history1"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/history2_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="経歴2"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/history2"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/history3_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="経歴3"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/history3"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/user_url1_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center|left"
+                            android:text="ブログURL"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/user_url1"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/user_url2_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Facebook"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/user_url2"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/user_url3_txt"
+                            android:layout_width="@dimen/dimen_85dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Twitter"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/user_url3"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/mail_delivery_flg_txt"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="メッセージ通知"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <RadioGroup
+                                android:layout_width="@dimen/dimen_300dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:background="@drawable/v3_dittext"
+                                android:gravity="center_vertical|left"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/check_mail_delivery_flg_1"
+                                    android:layout_width="@dimen/dimen_150dp"
+                                    android:layout_height="@dimen/dimen_40dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="@dimen/dimen_10dp" >
+
+                                    <RadioButton
+                                        android:id="@+id/mail_delivery_flg_1"
+                                        android:layout_width="@dimen/dimen_10dp"
+                                        android:layout_height="@dimen/dimen_10dp"
+                                        android:background="@drawable/radio_button_uncheck"
+                                        android:button="@null"
+                                        android:text="" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dimen_40dp"
+                                        android:gravity="center_vertical" >
+
+                                        <org.acv.bynal.views.BaseTextView
+                                            android:id="@+id/mail_delivery_flg_1_txt1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/dimen_40dp"
+                                            android:gravity="center|left"
+                                            android:text="メールする"
+                                            android:textColor="#000000"
+                                            android:textSize="@dimen/dimen_12dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/check_mail_delivery_flg_0"
+                                    android:layout_width="@dimen/dimen_150dp"
+                                    android:layout_height="@dimen/dimen_40dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal" >
+
+                                    <RadioButton
+                                        android:id="@+id/mail_delivery_flg_0"
+                                        android:layout_width="@dimen/dimen_10dp"
+                                        android:layout_height="@dimen/dimen_10dp"
+                                        android:background="@drawable/radio_button_uncheck"
+                                        android:button="@null"
+                                        android:text="" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/dimen_40dp"
+                                        android:gravity="center_vertical" >
+
+                                        <org.acv.bynal.views.BaseTextView
+                                            android:id="@+id/mail_delivery_flg_0_txt2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="@dimen/dimen_40dp"
+                                            android:gravity="center|left"
+                                            android:text="メールしない"
+                                            android:textColor="#000000"
+                                            android:textSize="@dimen/dimen_12dp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="horizontal" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/delivery_name_txt"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_weight="1.04"
+                            android:background="#c41922"
+                            android:gravity="center|center_vertical"
+                            android:text="@string/delivery_name_txt"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <org.acv.bynal.views.BaseBoldTextView
+                                android:id="@+id/delivery_name_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|left"
+                                android:text="受取人氏名"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/dimen_14dp" />
+
+                            <org.acv.bynal.views.BaseBoldTextView
+                                style="@style/star_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|left"
+                                android:typeface="normal" />
+                        </LinearLayout>
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/delivery_name"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <org.acv.bynal.views.BaseBoldTextView
+                                android:id="@+id/delivery_zip1_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|left"
+                                android:text="郵便番号"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/dimen_14dp" />
+
+                            <org.acv.bynal.views.BaseBoldTextView
+                                style="@style/star_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|left"
+                                android:typeface="normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" >
+
+                            <org.acv.bynal.views.BaseEditText
+                                android:id="@+id/delivery_zip1"
+                                android:layout_width="@dimen/dimen_40dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/profile_field_01"
+                                android:ems="10"
+                                android:gravity="center|left"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:paddingLeft="@dimen/dimen_5dp"
+                                android:singleLine="true"
+                                android:textSize="@dimen/dimen_14dp" />
+
+                            <org.acv.bynal.views.BaseBoldTextView
+                                android:id="@+id/search_hr"
+                                android:layout_width="@dimen/dimen_3dp"
+                                android:layout_height="1dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/search_hr"
+                                android:gravity="center|left" />
+
+                            <org.acv.bynal.views.BaseEditText
+                                android:id="@+id/delivery_zip2"
+                                android:layout_width="@dimen/dimen_52dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/profile_field_02"
+                                android:ems="10"
+                                android:gravity="center|left"
+                                android:inputType="number"
+                                android:maxLength="4"
+                                android:paddingLeft="@dimen/dimen_5dp"
+                                android:singleLine="true"
+                                android:textSize="@dimen/dimen_14dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="@dimen/dimen_300dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <org.acv.bynal.views.BaseBoldTextView
+                                    android:id="@+id/delivery_address_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center|left"
+                                    android:text="配送先住所"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/dimen_14dp" />
+
+                                <org.acv.bynal.views.BaseBoldTextView
+                                    style="@style/star_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center|left"
+                                    android:typeface="normal" />
+                            </LinearLayout>
+
+                            <org.acv.bynal.views.BaseBoldTextView
+                                style="@style/star_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|left"
+                                android:typeface="normal" />
+                        </LinearLayout>
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/delivery_address"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:layout_weight="0.75"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_12dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <org.acv.bynal.views.BaseBoldTextView
+                                android:id="@+id/delivery_phone_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:gravity="center|left"
+                                android:paddingBottom="@dimen/dimen_2dp"
+                                android:text="連絡先（ハイフンなし） "
+                                android:textColor="#000000"
+                                android:textSize="@dimen/dimen_14dp" />
+
+                            <org.acv.bynal.views.BaseBoldTextView
+                                style="@style/star_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|left"
+                                android:typeface="normal" />
+                        </LinearLayout>
+                        <!-- android:maxLength="11" -->
+
+                        <org.acv.bynal.views.BaseEditText
+                            android:id="@+id/delivery_phone"
+                            android:layout_width="@dimen/dimen_300dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:background="@drawable/v3_dittext"
+                            android:ems="10"
+                            android:gravity="center|left"
+                            android:inputType="phone"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <org.acv.bynal.views.BaseBoldTextView
+                                android:id="@+id/user_profile_add_address"
+                                android:layout_width="@dimen/dimen_85dp"
+                                android:layout_height="@dimen/dimen_30dp"
+                                android:background="@drawable/user_progile_1"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/dimen_5dp"
+                                android:text="届け先新規登録 "
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/dimen_10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <org.acv.bynal.views.BankInforView
+                        android:id="@+id/user_profile_bank_infor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_27dp"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_27dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <!-- android:background="@drawable/profile_update" -->
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/profile_user_btnupdateprofile"
+                            style="@style/v3_button"
+                            android:layout_width="@dimen/dimen_198dp"
+                            android:layout_height="@dimen/dimen_40dp"
+                            android:text="保存" />
+                    </LinearLayout>
+                    <!-- input text -->
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/camera_block"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/profile_transparent"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/camera_block_content"
+            android:layout_width="@dimen/dimen_182dp"
+            android:layout_height="@dimen/dimen_108dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_164dp"
+            android:background="@drawable/profile_bg_popup"
+            android:gravity="center|bottom" >
+
+            <LinearLayout
+                android:id="@+id/camera_block_content_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:orientation="vertical" >
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    android:id="@+id/camera001"
+                    android:layout_width="@dimen/dimen_170dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:background="@drawable/profile_popup_upload01"
+                    android:gravity="center|center_vertical"
+                    android:text="カメラから投稿する"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dimen_11dp" />
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    android:id="@+id/camera002"
+                    android:layout_width="@dimen/dimen_170dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@drawable/profile_popup_upload02"
+                    android:gravity="center|center_vertical"
+                    android:text="カメラロールから投稿する"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dimen_11dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

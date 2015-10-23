@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="bynal_parent_text"></style>
+
+    <style name="bynal_text">
+        <item name="android:background">@drawable/message_message_3</item>
+        <item name="android:textSize">@dimen/dimen_16dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="bynal_text_bold">
+        <item name="android:background">@drawable/message_message_3</item>
+        <item name="android:textSize">@dimen/dimen_16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="bynal_edit_text">
+        <item name="android:background">@drawable/message_message_3</item>
+        <item name="android:textSize">@dimen/dimen_13dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:paddingLeft">@dimen/dimen_10dp</item>
+        <item name="android:paddingRight">@dimen/dimen_10dp</item>
+    </style>
+
+    <style name="bynal_edit_text_while">
+        <item name="android:background">@drawable/text_while</item>
+        <item name="android:textSize">@dimen/dimen_13dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:paddingLeft">@dimen/dimen_10dp</item>
+        <item name="android:paddingRight">@dimen/dimen_10dp</item>
+    </style>
+
+    <style name="bynal_edit_text_height_27">
+        <item name="android:background">@drawable/v3_dittext</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:paddingLeft">@dimen/dimen_10dp</item>
+        <item name="android:paddingRight">@dimen/dimen_10dp</item>
+        <item name="android:width">@dimen/dimen_212dp</item>
+        <item name="android:textSize">@dimen/dimen_13dp</item>
+    </style>
+
+    <style name="bynal_edit_text_height_27_area" parent="bynal_edit_text_height_27">
+        <item name="android:paddingBottom">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+    </style>
+
+    <style name="PauseDialog" parent="@android:style/Theme.Translucent.NoTitleBar"></style>
+
+    <style name="star_text">
+        <item name="android:paddingLeft">@dimen/dimen_3dp</item>
+        <item name="android:paddingRight">@dimen/dimen_3dp</item>
+        <item name="android:textSize">@dimen/dimen_10dp</item>
+        <item name="android:text">※</item>
+        <item name="android:textColor">#ff3333</item>
+    </style>
+
+    <style name="error_text">
+        <item name="android:paddingLeft">@dimen/dimen_3dp</item>
+        <item name="android:paddingRight">@dimen/dimen_3dp</item>
+        <item name="android:textSize">@dimen/dimen_15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ff3333</item>
+    </style>
+
+    <style name="v3_button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/dimen_13dp</item>
+        <item name="android:background">@drawable/v3_a_button_xml</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="v3_button_facebook">
+        <item name="android:paddingLeft">@dimen/dimen_18dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/dimen_12dp</item>
+        <item name="android:background">@drawable/v3_button_fb_xml</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="v3_button_twitter">
+        <item name="android:paddingLeft">@dimen/dimen_18dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/dimen_12dp</item>
+        <item name="android:background">@drawable/v3_button_tw_xml</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

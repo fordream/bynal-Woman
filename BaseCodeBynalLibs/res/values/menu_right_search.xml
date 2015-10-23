@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="menu_search_hot">人気</string>
+    <string name="menu_search_hot_sub1">投稿が新しい</string>
+    <string name="menu_search_hot_sub2">フォロー数が多い</string>
+    <string name="menu_search_hot_sub3">公開終了間近</string>
+    <string name="menu_search_hot_sub4">支援金額が多い</string>
+    <string name="menu_search_cat">カテゴリー</string>
+    <string name="menu_search_tag">新着タグ</string>
+    <string name="header_search_hot">人気検索</string>
+    <string name="header_search_cat">カテゴリー検索</string>
+    <string name="header_search_tag">タグ検索</string>
+    <string name="header_search_key">キーワード検索</string>
+    <string name="search_return_null">検索しましたが、該当プロジェクトはありませんでした。</string>
+    <string name="header_search_default">投稿が新しい</string>
+
+</resources>

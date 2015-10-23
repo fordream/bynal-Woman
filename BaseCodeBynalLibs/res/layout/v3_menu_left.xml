@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_275dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menuslide_header"
+        android:layout_width="@dimen/dimen_275dp"
+        android:layout_height="@dimen/dimen_45dp"
+        android:background="@drawable/menu_bg_header"
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/menuslide_header_img"
+            android:layout_width="@dimen/dimen_179dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:background="@drawable/v3_home_logo"
+            android:orientation="horizontal" >
+        </ImageView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menuslide_header"
+        android:scrollbarThumbVertical="@drawable/transfer"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/menu_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <a.com.acv.bynal.v3.views.MainMenuItemView
+                android:id="@+id/menu_m1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </a.com.acv.bynal.v3.views.MainMenuItemView>
+            <a.com.acv.bynal.v3.views.MainMenuItemView
+                android:id="@+id/menu_m2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </a.com.acv.bynal.v3.views.MainMenuItemView>
+            
+            <a.com.acv.bynal.v3.views.MainMenuItemView
+                android:id="@+id/menu_m3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </a.com.acv.bynal.v3.views.MainMenuItemView>
+            
+            <a.com.acv.bynal.v3.views.MainMenuItemView
+                android:id="@+id/menu_m4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </a.com.acv.bynal.v3.views.MainMenuItemView>
+            <a.com.acv.bynal.v3.views.MainMenuItemView
+                android:id="@+id/menu_m5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </a.com.acv.bynal.v3.views.MainMenuItemView>
+            <a.com.acv.bynal.v3.views.MainMenuItemView
+                android:id="@+id/menu_m6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </a.com.acv.bynal.v3.views.MainMenuItemView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

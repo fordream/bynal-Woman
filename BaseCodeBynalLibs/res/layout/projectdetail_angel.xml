@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/pj_detail_angel_m_main"
+    android:background="@drawable/v3_bg"
+    android:layout_height="match_parent">
+	<org.acv.bynal.views.HeaderView
+        android:id="@+id/pj_detail_angel_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </org.acv.bynal.views.HeaderView>
+	<org.acv.bynal.views.BaseTextView
+	    android:id="@+id/pj_err_message"
+	    style="@style/error_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/pj_detail_angel_header"
+	    android:gravity="left"
+	    android:padding="@dimen/dimen_10dp"
+	    android:text="err"
+	    android:visibility="gone" />
+     <GridView
+         android:id="@+id/gridview_angel"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/pj_err_message"
+         android:columnWidth="@dimen/dimen_150dp"
+         android:padding="@dimen/dimen_10dp"
+         android:gravity="center"
+         android:numColumns="auto_fit"
+         android:listSelector="@drawable/transfer"
+         android:stretchMode="columnWidth" >
+
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50dp"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    android:layout_marginBottom="@dimen/dimen_5dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+     <LinearLayout
+         android:id="@+id/top123"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dimen_50dp"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:layout_weight="2"
+         android:orientation="vertical"
+         android:gravity="center_horizontal"
+         android:weightSum="2" >
+         <LinearLayout
+	         android:layout_width="fill_parent"
+	         android:layout_height="@dimen/dimen_50dp"
+	         android:gravity="center_vertical"
+	         android:orientation="horizontal">
+
+	         	<org.acv.bynal.views.BaseTextView
+	         	    android:id="@+id/amount"
+	         	    android:layout_width="@dimen/dimen_66dp"
+	         	    android:layout_height="@dimen/dimen_50dp"
+	         	    android:gravity="left|center_vertical"
+	         	    android:textSize="@dimen/dimen_14dp"
+	         	    android:textColor="#000000"
+	         	    android:text="title" />
+				<LinearLayout
+		         android:layout_width="@dimen/dimen_109dp"
+		         android:layout_height="wrap_content"
+		         android:orientation="vertical">
+		         	<org.acv.bynal.views.BaseTextView
+	         	    android:id="@+id/delivery_name"
+	         	    android:layout_width="fill_parent"
+	         	    android:layout_height="wrap_content"
+	         	    android:layout_marginTop="@dimen/dimen_5dp"
+	         	    android:gravity="left|center_vertical"
+	         	    android:textSize="@dimen/dimen_14dp"
+	         	    android:textColor="#000000"
+	         	    android:text="name" />
+		         	<org.acv.bynal.views.BaseTextView
+	         	    android:id="@+id/delivery_phone"
+	         	    android:layout_width="fill_parent"
+	         	    android:layout_height="wrap_content"
+	         	    android:gravity="left"
+	         	    android:textSize="@dimen/dimen_14dp"
+	         	    android:textColor="#000000"
+	         	    android:text="phone" />
+	         	</LinearLayout>
+	         	<LinearLayout
+		         android:layout_width="@dimen/dimen_80dp"
+		         android:layout_height="wrap_content"
+		         android:orientation="vertical">
+		         	<org.acv.bynal.views.BaseTextView
+	         	    android:id="@+id/delivery_zip"
+	         	    android:layout_width="fill_parent"
+	         	    android:layout_height="wrap_content"
+	         	    android:layout_marginTop="@dimen/dimen_5dp"
+	         	    android:gravity="left"
+	         	    android:textSize="@dimen/dimen_14dp"
+	         	    android:textColor="#000000"
+	         	    android:text="zip" />
+		         	<org.acv.bynal.views.BaseTextView
+	         	    android:id="@+id/delivery_address"
+	         	    android:layout_width="fill_parent"
+	         	    android:layout_height="wrap_content"
+	         	    android:gravity="left"
+	         	    android:textSize="@dimen/dimen_14dp"
+	         	    android:textColor="#000000"
+	         	    android:text="address " />
+	         	</LinearLayout>
+
+				<LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="@dimen/dimen_50dp"
+				    android:gravity="center_vertical|center_horizontal"
+				    android:orientation="vertical" >
+
+				    <org.acv.bynal.views.BaseTextView
+				        android:id="@+id/send_message"
+				        android:layout_width="@dimen/dimen_40dp"
+				        android:layout_height="@dimen/dimen_18dp"
+				        android:background="@drawable/pm_icon_send_message"
+				        android:gravity="left|top"
+				        android:layout_marginTop="0dp"
+				        android:scaleType="fitXY"/>
+				</LinearLayout>
+ 	
+         </LinearLayout>
+    </LinearLayout> 
+</RelativeLayout>

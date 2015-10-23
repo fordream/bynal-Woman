@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+   <LinearLayout
+        android:id="@+id/mylayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal" >
+
+           <Button
+               android:id="@+id/Button_rotate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginBottom="5dp"
+               android:layout_weight="1"
+               android:text="rotate"
+               android:textColor="#33B5E5" />
+
+           <Button
+               android:id="@+id/Button_crop"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginBottom="5dp"
+               android:layout_weight="1"
+               android:text="crop"
+               android:textColor="#33B5E5" />
+
+           <Button
+               android:id="@+id/Button_upload"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginBottom="5dp"
+               android:layout_weight="1"
+               android:visibility="gone"
+               android:text="upload"
+               android:textColor="#33B5E5" />
+       </LinearLayout>
+ 
+        <!-- aa --><com.edmodo.cropper.CropImageView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/CropImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        
+        <ImageView
+                android:id="@+id/croppedImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center|top"/>
+
+    </LinearLayout>
+
+</ScrollView>

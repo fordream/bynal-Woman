@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/login_main_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_212dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    android:id="@+id/login_main_register_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:gravity="bottom"
+                    android:text="ユーザ名（ニックネーム可）"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dimen_13dp"
+                    android:textStyle="bold" />
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    style="@style/star_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <org.acv.bynal.views.BaseEditText
+                android:id="@+id/login_main_register_edt1"
+                style="@style/bynal_edit_text_height_27"
+                android:layout_width="@dimen/dimen_212dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:ems="10"
+                android:gravity="center|left"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_212dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    android:id="@+id/login_main_register_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:gravity="bottom"
+                    android:text="Eメール"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dimen_13dp"
+                    android:textStyle="bold" />
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    style="@style/star_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <org.acv.bynal.views.BaseEditText
+                android:id="@+id/login_main_register_edt2"
+                style="@style/bynal_edit_text_height_27"
+                android:layout_width="@dimen/dimen_212dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:ems="10"
+                android:gravity="center|left"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_212dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    android:id="@+id/login_main_register_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:gravity="bottom"
+                    android:text="パスワード"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dimen_13dp"
+                    android:textStyle="bold" />
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    style="@style/star_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <org.acv.bynal.views.BaseEditText
+                android:id="@+id/login_main_register_edt3"
+                style="@style/bynal_edit_text_height_27"
+                android:layout_width="@dimen/dimen_212dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:ems="10"
+                android:gravity="center|left"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_212dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    android:id="@+id/login_main_register_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:gravity="bottom"
+                    android:text="パスワード(確認用)"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dimen_13dp"
+                    android:textStyle="bold" />
+
+                <org.acv.bynal.views.BaseBoldTextView
+                    style="@style/star_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <org.acv.bynal.views.BaseEditText
+                android:id="@+id/login_main_register_edt4"
+                style="@style/bynal_edit_text_height_27"
+                android:layout_width="@dimen/dimen_212dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:ems="10"
+                android:gravity="center|left"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <org.acv.bynal.views.BaseTextView
+                android:id="@+id/login_main_register_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+            <org.acv.bynal.views.BaseBoldTextView
+                android:id="@+id/login_main_register_btn1_1"
+                style="@style/v3_button"
+                android:layout_width="@dimen/dimen_222dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:text="利用規約に同意して新規登録" />
+
+            <org.acv.bynal.views.BaseTextView
+                android:id="@+id/login_main_login_bor"
+                android:layout_width="@dimen/dimen_220dp"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/line_user"
+                android:gravity="center" />
+
+            <org.acv.bynal.views.BaseTextView
+                android:id="@+id/login_main_register_btn2"
+                style="@style/v3_button_facebook"
+                android:layout_width="@dimen/dimen_222dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Facebookアカウントで新規登録" />
+
+            <org.acv.bynal.views.BaseTextView
+                android:id="@+id/login_main_register_btn3"
+                android:layout_width="@dimen/dimen_222dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginBottom="30dp"
+                  style="@style/v3_button_twitter"
+                android:text="Twitterアカウントで新規登録" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

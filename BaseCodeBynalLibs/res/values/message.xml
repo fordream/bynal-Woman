@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="block">ブロック中</string>
+    <string name="unblock">ブロック解除</string>
+    <string name="hide">非表示</string>
+    <string name="unhide">表示</string>
+    <string name="spam">スパム</string>
+    <string name="unspam">スパム解除</string>
+
+</resources>

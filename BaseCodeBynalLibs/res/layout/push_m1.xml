@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/message"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:text="message"
+        android:textSize="@dimen/dimen_20dp" />
+
+    <Button
+        android:id="@+id/new_pj"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:text="new_pj"
+        android:textSize="@dimen/dimen_20dp" />
+
+    <Button
+        android:id="@+id/support_pj"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:text="support_pj"
+        android:textSize="@dimen/dimen_20dp" />
+
+    <Button
+        android:id="@+id/favorite_pj"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:text="favorite_pj"
+        android:textSize="@dimen/dimen_20dp" />
+
+    <Button
+        android:id="@+id/report_pj"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:text="report_pj"
+        android:textSize="@dimen/dimen_20dp" />
+
+</LinearLayout>

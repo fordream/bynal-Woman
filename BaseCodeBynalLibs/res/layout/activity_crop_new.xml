@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v3_bg">
+
+   <LinearLayout
+        android:id="@+id/mylayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+       <RelativeLayout
+		    android:id="@+id/header_main_content"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/dimen_45dp"
+		    android:background="#cc0033"
+		    android:orientation="vertical" >
+		
+		    <org.acv.bynal.views.BaseBoldTextView
+		        android:id="@+id/headertextView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:text="イメージ編集"
+		        android:textColor="#ffffff"
+        		android:textSize="@dimen/dimen_18dp"
+		        android:textStyle="bold" />
+		
+		    <org.acv.bynal.views.BaseBoldTextView
+		        android:id="@+id/home_logo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_centerVertical="true"
+		        android:background="@drawable/home_logo"
+		        android:text=""
+		        android:textColor="#ffffff"
+		        android:textStyle="bold"
+		        android:visibility="gone" />
+		
+		    <ImageButton
+		        android:id="@+id/headerbutton1"
+		        style="?android:attr/buttonStyleSmall"
+        		android:layout_width="@dimen/dimen_45dp"
+        		android:layout_height="@dimen/dimen_45dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:background="@null"
+		        android:padding="@dimen/dimen_10dp"
+		        android:src="@drawable/back_xml" />
+		
+		    <ImageButton
+		        android:id="@+id/headerbutton2"
+		        style="?android:attr/buttonStyleSmall"
+        		android:layout_width="@dimen/dimen_45dp"
+        		android:layout_height="@dimen/dimen_45dp"
+		        android:layout_alignParentRight="true"
+		        android:layout_centerVertical="true"
+		        android:background="@null"
+		        android:padding="@dimen/dimen_10dp"
+		        android:src="@drawable/upload_xml" />
+		</RelativeLayout>
+
+       <!-- <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal" >
+
+           <Button
+               android:id="@+id/Button_rotate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginBottom="5dp"
+               android:layout_weight="1"
+               android:text="rotate"
+               android:textColor="#33B5E5" />
+
+           <Button
+               android:id="@+id/Button_crop"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginBottom="5dp"
+               android:layout_weight="1"
+               android:text="crop"
+               android:textColor="#33B5E5" />
+
+           <Button
+               android:id="@+id/Button_upload"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginBottom="5dp"
+               android:layout_weight="1"
+               android:visibility="gone"
+               android:text="upload"
+               android:textColor="#33B5E5" />
+       </LinearLayout>
+  -->
+        <!-- aa --><com.edmodo.cropper.CropImageView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/CropImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+        
+        <!-- <ImageView
+                android:id="@+id/croppedImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center|top"/> -->
+
+    </LinearLayout>
+
+</ScrollView>

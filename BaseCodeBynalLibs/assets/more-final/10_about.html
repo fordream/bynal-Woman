@@ -1,0 +1,965 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <style type="text/css">
+    @media (min-width: 1536px) and (max-width: 2048px) { 
+        body {
+            margin: 0;
+            padding: 0px 15px;
+            color: #3d3d3d;
+            font-size: 14px;
+            font-family: Meiryo;
+            background: url("images/bg.png") repeat-y !important;
+            background-position: fixed !important;
+            background-size: 100% !important;
+            /*-webkit-background-size: cover;*/
+            /*-moz-background-size: cover;*/
+            /*-o-background-size: cover;*/
+            /*background-size: cover;*/
+            overflow-x: hidden !important; 
+        }
+
+         .menu {
+                display: block;
+                overflow: hidden;
+                padding-top: 20px;
+                line-height: 40px;
+            }
+
+            .menu li {
+                background: url('images/jump.png') no-repeat 0px 10px;
+                padding-left: 30px;
+                list-style: none !important;
+                padding-left: 0px !important;
+            }
+
+            .jump {
+                background: none !important;
+                text-align: left;
+                padding: 0px !important;
+                color: #9f062a;
+                margin-bottom: 0px !important;
+            }
+
+        .half img {
+            width: 90% !important;
+            margin-top: -30px;
+        }
+
+        img{
+            width: 100%;
+        }
+        a{
+            display: block;
+            text-align: center;
+            background-color: #bb0327;
+            -moz-border-top-left-radius: 3px;
+            -webkit-border-top-left-radius: 3px;
+            border-top-left-radius: 3px;
+            -moz-border-top-right-radius: 3px;
+            -webkit-border-top-right-radius: 3px;
+            border-top-right-radius: 3px;
+            padding: 5px 0;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            -webkit-transition: 0.15s ease-in-out;
+            -moz-transition: 0.15s ease-in-out;
+            -o-transition: 0.15s ease-in-out;
+            transition: 0.15s ease-in-out;
+        }
+
+        a:hover{
+            text-decoration: none;
+            color: #ffffff;
+            opacity: 0.7;
+        }
+        a.full-width{
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        h3{
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 18.5px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        h3.title{
+            background: url("images/logo-46x31.png") no-repeat;
+            background-position: left center;
+            color: #bb0226;
+            margin-bottom: 15px;
+            padding: 15px 0 15px 60px;
+            border-bottom: 1px solid #9f062a;
+            /*line-height: 31px;*/
+        }
+
+        a h3{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        p{
+            display: block;
+            line-height: 25px;
+            margin: 0 0 10px;
+        }
+
+        .button-white{
+            padding-top: 10px;
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+        }
+
+        a.bg-white{
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            padding: 0;
+            background-color: #ffffff;
+            color: #bb0226;
+            border: solid 1px #a1a1a1;
+            border-radius: 3px;
+            -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow:    0px 2px 3px 0px rgba(50, 50, 50, 0.75);
+            box-shadow:         0px 2px 3px 0px rgba(50, 50, 50, 0.75);
+        }
+        .pre-icon{
+            width: 48%;
+            display: inline-block;
+        }
+        .button-action{
+            margin: 45px 0px 0px;
+            display: block;
+        }
+
+        a.medium-width{
+            width: 85%;
+        }
+
+        a.link-1{
+            border: solid 1px #bb0226;
+            width: 45%;
+            float: left;
+        }
+        a.link-0{
+            color: #666666;
+            border: solid 1px #a1a1a1;
+            background-color: #f3f3f3;
+            width: 45%;
+            float: right;
+        }
+        .img-responsive{
+            display: block;
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            border: 0;
+            margin-bottom: 5px;
+        }
+        .pull-right {
+            float: right !important;
+        }
+        .clearfix{
+            clear: both;
+            margin: 0;
+            line-height: 0;
+        }
+
+        .wrap01 {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .block01, .block02 {
+            display: block;
+            height: auto;
+            width: 49%;
+        }
+
+        .block01 {
+            float: left;
+        }
+
+        .block02 {
+            float: right;
+        }
+
+        .list_display {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            padding: 0px !important
+        }
+
+        .list_display li {
+            display: inline-block;
+            width: 31.5%;
+            vertical-align: top;
+            margin-right: 15px;
+            margin-bottom: 20px;
+        }
+
+        .list_display li:nth-child(3) {
+            margin-right: 0px;
+        }
+
+        /*   ADD MORE CSS   */
+
+        .img-01 {
+            display:block;
+            width:100%;
+            padding-top:4px;
+        }
+
+        .img-02 {
+            width: 100%
+        }
+
+        .img-03 {
+            display:block;
+            width:85% !important;
+            padding-top:10px;
+        }
+
+        .img-05 {
+            padding-top:5px;
+        }
+
+        .img-06 {
+            display:block;
+            width:85%;
+            margin:15px auto 0px;
+        }
+
+        .img-07 {
+            width:85% !important;
+            margin:auto;
+            padding-bottom:10px
+        }
+
+        .img-08 {
+            display:block;
+            width:80%;
+        }
+
+        .imng-09 {
+            display:block;
+            width:80%;
+        }
+
+        .img-10 {
+            display:block;
+            width:40%;
+        }
+
+        .img-11 {
+            display:block;
+            width:80%;
+            margin:auto;
+        }
+
+        .img-12 {
+            display:block;
+            width:80%;
+            margin:auto;
+        }
+
+        .img-13 {
+            display:block;
+            width:80%;
+            margin:auto;
+            margin-top:40px;
+        }
+
+        .btn-special-01 {
+            display:block;
+            margin:auto !important;
+            text-align:center;
+        }
+
+        .btn-special-02 {
+            display:block;
+            margin:0px auto 45px !important;
+            text-align:center;
+        }
+
+        .link-special-01, .link-special-02 {
+            display:block;
+            margin:auto !important;
+            float:none !important;
+        }
+
+        .title-margin {
+            display:block;
+            margin-top:20px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) { 
+        body {
+            margin: 0;
+            padding: 0px 15px;
+            color: #3d3d3d;
+            font-size: 14px;
+            font-family: Meiryo;
+            background: url("images/bg.png") repeat-y !important;
+            background-position: fixed !important;
+            background-size: 100% !important;
+            /*-webkit-background-size: cover;*/
+            /*-moz-background-size: cover;*/
+            /*-o-background-size: cover;*/
+            /*background-size: cover;*/
+            overflow-x: hidden !important; 
+        }
+
+         .menu {
+                display: block;
+                overflow: hidden;
+                padding-top: 20px;
+                line-height: 40px;
+                padding-left: 0px !important;
+            }
+
+            .menu li {
+                background: url('images/jump.png') no-repeat 0px 10px;
+                padding-left: 30px;
+                list-style: none !important;
+            }
+
+            .jump {
+                background: none !important;
+                text-align: left;
+                padding: 0px !important;
+                color: #9f062a;
+                margin-bottom: 0px !important;
+            }
+
+        .half img {
+            width: 90% !important;
+            margin-top: -30px;
+        }
+
+        img{
+            width: 100%;
+        }
+        a{
+            display: block;
+            text-align: center;
+            background-color: #bb0327;
+            -moz-border-top-left-radius: 3px;
+            -webkit-border-top-left-radius: 3px;
+            border-top-left-radius: 3px;
+            -moz-border-top-right-radius: 3px;
+            -webkit-border-top-right-radius: 3px;
+            border-top-right-radius: 3px;
+            padding: 5px 0;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            -webkit-transition: 0.15s ease-in-out;
+            -moz-transition: 0.15s ease-in-out;
+            -o-transition: 0.15s ease-in-out;
+            transition: 0.15s ease-in-out;
+        }
+
+        a:hover{
+            text-decoration: none;
+            color: #ffffff;
+            opacity: 0.7;
+        }
+        a.full-width{
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        h3{
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 18.5px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        h3.title{
+            background: url("images/logo-46x31.png") no-repeat;
+            background-position: left center;
+            color: #bb0226;
+            margin-bottom: 15px;
+            padding: 15px 0 15px 60px;
+            border-bottom: 1px solid #9f062a;
+            /*line-height: 31px;*/
+        }
+
+        a h3{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        p{
+            display: block;
+            line-height: 25px;
+            margin: 0 0 10px;
+        }
+
+        .button-white{
+            padding-top: 10px;
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+        }
+
+        a.bg-white{
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            padding: 0;
+            background-color: #ffffff;
+            color: #bb0226;
+            border: solid 1px #a1a1a1;
+            border-radius: 3px;
+            -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow:    0px 2px 3px 0px rgba(50, 50, 50, 0.75);
+            box-shadow:         0px 2px 3px 0px rgba(50, 50, 50, 0.75);
+        }
+        .pre-icon{
+            width: 48%;
+            display: inline-block;
+        }
+        .button-action{
+            margin: 45px 0px 0px;
+            display: block;
+        }
+
+        a.medium-width{
+            width: 85%;
+        }
+
+        a.link-1{
+            border: solid 1px #bb0226;
+            width: 45%;
+            float: left;
+        }
+        a.link-0{
+            color: #666666;
+            border: solid 1px #a1a1a1;
+            background-color: #f3f3f3;
+            width: 45%;
+            float: right;
+        }
+        .img-responsive{
+            display: block;
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            border: 0;
+            margin-bottom: 5px;
+        }
+        .pull-right {
+            float: right !important;
+        }
+        .clearfix{
+            clear: both;
+            margin: 0;
+            line-height: 0;
+        }
+
+        .wrap01 {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .block01, .block02 {
+            display: block;
+            height: auto;
+            width: 49%;
+        }
+
+        .block01 {
+            float: left;
+        }
+
+        .block02 {
+            float: right;
+        }
+
+        .list_display {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            padding: 0px !important
+        }
+
+        .list_display li {
+            display: inline-block;
+            width: 31.5%;
+            vertical-align: top;
+            margin-right: 15px;
+            margin-bottom: 20px;
+        }
+
+        .list_display li:nth-child(3) {
+            margin-right: 0px;
+        }
+
+        /*   ADD MORE CSS   */
+
+        .img-01 {
+            display:block;
+            width:100%;
+            padding-top:4px;
+        }
+
+        .img-02 {
+            width: 100%
+        }
+
+        .img-03 {
+            display:block;
+            width:85% !important;
+            padding-top:10px;
+        }
+
+        .img-05 {
+            padding-top:5px;
+        }
+
+        .img-06 {
+            display:block;
+            width:85%;
+            margin:15px auto 0px;
+        }
+
+        .img-07 {
+            width:85% !important;
+            margin:auto;
+            padding-bottom:10px
+        }
+
+        .img-08 {
+            display:block;
+            width:80%;
+        }
+
+        .imng-09 {
+            display:block;
+            width:80%;
+        }
+
+        .img-10 {
+            display:block;
+            width:40%;
+        }
+
+        .img-11 {
+            display:block;
+            width:80%;
+            margin:auto;
+        }
+
+        .img-12 {
+            display:block;
+            width:80%;
+            margin:auto;
+        }
+
+        .img-13 {
+            display:block;
+            width:80%;
+            margin:auto;
+            margin-top:40px;
+        }
+
+        .btn-special-01 {
+            display:block;
+            margin:auto !important;
+            text-align:center;
+        }
+
+        .btn-special-02 {
+            display:block;
+            margin:0px auto 45px !important;
+            text-align:center;
+        }
+
+        .link-special-01, .link-special-02 {
+            display:block;
+            margin:auto !important;
+            float:none !important;
+        }
+
+        .title-margin {
+            display:block;
+            margin-top:20px;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) { 
+        body {
+                margin: 0;
+                padding: 0px 15px;
+                color: #3d3d3d;
+                font-size: 14px;
+                font-family: Meiryo;
+                background: url("images/bg_screen.jpg") repeat-y !important;
+                /*-webkit-background-size: cover;*/
+                /*-moz-background-size: cover;*/
+                /*-o-background-size: cover;*/
+                /*background-size: cover;*/
+            }
+
+            .menu {
+                display: block;
+                overflow: hidden;
+                padding-top: 20px;
+                line-height: 40px;
+            }
+
+            .menu li {
+                background: url('images/jump.png') no-repeat 0px 10px;
+                padding-left: 30px;
+            }
+
+            .jump {
+                background: none !important;
+                text-align: left;
+                padding: 0px !important;
+                color: #9f062a;
+                margin-bottom: 0px !important;
+            }
+
+            .half img {
+                width: 90% !important;
+                margin-top: -30px;
+            }
+
+            img{
+                width: 50%;
+            }
+            a{
+                display: block;
+                text-align: center;
+                background-color: #bb0327;
+                -moz-border-top-left-radius: 3px;
+                -webkit-border-top-left-radius: 3px;
+                border-top-left-radius: 3px;
+                -moz-border-top-right-radius: 3px;
+                -webkit-border-top-right-radius: 3px;
+                border-top-right-radius: 3px;
+                padding: 5px 0;
+                margin-bottom: 20px;
+                color: #ffffff;
+                text-decoration: none;
+                -webkit-transition: 0.15s ease-in-out;
+                -moz-transition: 0.15s ease-in-out;
+                -o-transition: 0.15s ease-in-out;
+                transition: 0.15s ease-in-out;
+            }
+
+            a:hover{
+                text-decoration: none;
+                color: #ffffff;
+                opacity: 0.7;
+            }
+            a.full-width{
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            h3{
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 17px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+
+            h3.title{
+                background: url("images/logo-46x31.png") no-repeat;
+                background-position: left center;
+                color: #bb0226;
+                margin-bottom: 15px;
+                padding: 15px 0 15px 60px;
+                border-bottom: 1px solid #9f062a;
+                /*line-height: 31px;*/
+            }
+
+            a h3{
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            p{
+                display: block;
+                line-height: 25px;
+                margin: 0 0 10px;
+            }
+
+            .button-white{
+                padding-top: 10px;
+                display: inline-block;
+                width: 50%;
+                vertical-align: top;
+            }
+
+            a.bg-white{
+                width: 100%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                padding: 0;
+                background-color: #ffffff;
+                color: #bb0226;
+                border: solid 1px #a1a1a1;
+                border-radius: 3px;
+                -webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.75);
+                -moz-box-shadow:    0px 2px 3px 0px rgba(50, 50, 50, 0.75);
+                box-shadow:         0px 2px 3px 0px rgba(50, 50, 50, 0.75);
+            }
+            .pre-icon{
+                width: 48%;
+                display: inline-block;
+            }
+            .button-action{
+                margin: 25px auto 5px;
+            }
+
+            a.medium-width{
+                width: 85%;
+            }
+
+            a.link-1{
+                border: solid 1px #bb0226;
+            }
+            a.link-0{
+                color: #666666;
+                border: solid 1px #a1a1a1;
+                background-color: #f3f3f3;
+            }
+            .img-responsive{
+                display: block;
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+                border: 0;
+                margin-bottom: 5px;
+            }
+            .pull-right {
+                float: right !important;
+            }
+            .clearfix{
+                clear: both;
+                margin: 0;
+                line-height: 0;
+            }
+
+            ul {
+                padding: 0px !important;
+            }
+
+            ul li {
+                list-style: none;
+                width: 100%;
+            }
+
+            .img-01, .img-02 {
+                width: 100%;
+            } 
+
+            .img-06, .img-07 {
+                float: right;
+            }
+
+            .img-07 {
+                width: 40%;
+            }
+
+            .img-11, .img-12, .img-13 {
+                float: right;
+            }
+
+            .btn-01 h3, .btn-02 h3, .btn-03 h3, .btn-special-01 h3, .btn-special-02 h3 {
+                font-size: 15px !important;
+            } 
+
+            .btn-special-01, .btn-special-02 {
+                margin: 0px auto;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div id="background"></div>
+    <div class="main-content">
+
+        <ul class="menu" id="top">
+            <li><a class="jump" href="#link1">BYNAL WOMANとは</a></li>
+            <li><a class="jump" href="#link2">BYNAL WOMAN ができること</a></li>
+            <li><a class="jump" href="#link3">BYNAL WOMANのルール</a></li>
+            <li><a class="jump" href="#link4">プレゼンターとは</a></li>
+            <li><a class="jump" href="#link5">サポートとは</a></li>
+            <li><a class="jump" href="#link6">エンジェルとは</a></li>
+        </ul>
+
+        <div class="wrap01">
+            <div class="block01">
+                <h3 class="title" id="link1">BYNAL WOMANとは</h3>
+                <h3>女性の夢をカタチにする場所 です。</h3>
+                <p>BYNAL WOMAN(バイナルウーマン)は、一人でも多くの女性が思い切り夢にチャレンジできるように、 夢や目標をカタチにしたいと思っている女性と、その女性たちの夢や目標に共感し応援・支援したいと思っている人たちを、 ウェブを中心にマッチングさせることで、夢や目標の実現に向けてバックアップさせていただくクラウドファンディングサービスです。</p>
+                <img src="images/about_001.jpg" class="img-responsive img-01">
+            </div>
+
+            <div class="block02">
+                <h3 class="title" id="link2">BYNAL WOMAN ができること</h3>
+                <p>BYNAL WOMAN(バイナルウーマン)を運営する(株)BYNALは、 “女性の夢”を、日本のみならず世界中の人に発信していくために、 いまや世界の情報の中心地である“シンガポール”に拠点をおき、世界展開を視野に、 イベントコンサルティングやキャスティングなども行っております。 そのため、様々なイベント、セミナー、ショーなどの開催、テレビ、雑誌などの各メディアとも連携により、 世界中に発信していくことが可能です。 2013年10月、シンガポールで開催された5万人規模のアジア最大級のファッションショー 「FIDe Fashion Weeks 2013」とのコラボレーションも果たしました。</p>
+                <img src="images/about_002.jpg" class="img-responsive img-02">
+            </div>
+        </div>
+
+        <h3 class="title  title-margin" id="link3">BYNAL WOMANのルール</h3>
+        <p>プロジェクト掲載期間内にプレゼンターが設定した目標金額の100%を超えた場合“のみ”、プロジェクトは成立となります。 掲載料は無料ですが、支援総額の20%がBYNAL WOMANの手数料（クレジットカード決済手数料は弊社負担）として発生し、 残りの80%を支援金額として受け取ることができます。<br>
+            もし、プロジェクトがプレゼンターが設定した目標金額に届かず、不成立の場合は、 支援された総額はそのままエンジェルに返金され、弊社への手数料も発生しません。 その他手数料は一切ありません。</p>
+
+        <h3 class="title  title-margin" id="link4">プレゼンターとは</h3>
+        <p>夢や目標を、事業やサービスとしてカタチにしたい、 BYNAL WOMAN(バイナルウーマン)にプロジェクトを掲載した女性のことを言います。</p>
+        <ul class="list_display">
+            <li>
+                <a href="#" class="full-width"><h3>夢のための活動資金</h3></a>
+                <p>
+                    “夢” といっても人それぞれ様々な夢があると思いますが、 どの夢を叶えるためにも、必ず必要になるのが “活動資金” です。 プレゼンターはBYNAL WOMAN(バイナルウーマン)を通して、 夢をカタチにするために必要な活動資金を自ら提示し、インターネットを通じ、 自分の夢を存分に語っていただき、共感してくれるエンジェルの方がいれば、 “500円～”という少額から資金を募ることができます。
+                    <img src="images/pre_001.png" class="img-responsive pull-right img-03">
+                </p>
+                <p class="clearfix">&nbsp;</p>
+            </li>
+
+            <li>
+                <a href="#" class="full-width"><h3>世の中のニーズ確認</h3></a>
+                <p>
+                    自分の夢は本当にみんなに共感してもらえるのか、正直、不安だったり、自信がなかったりする方もいます。 夢へ走り出す前に、資金を募りながら、実際共感してもらえるか、 「支援額」という数字として世の中の反応をみることができるため、 お金にまつわるリスクを軽減できるだけでなく、自分の夢（プロジェクト）が世の中に受け入れられるかどうかを確認しながら進めることができます。
+                    <img src="images/pre_002.png" class="img-responsive pull-right .img-04">
+                </p>
+                <p class="clearfix">&nbsp;</p>
+            </li>
+
+            <li>
+                <a href="#" class="full-width"><h3>新しいファン作り</h3></a>
+                <p>
+                    もし、すでに資金があったとしても、商品や場所が準備できていても、 ファン・お客様がいなければ、始まりません。 BYNAL WOMAN(バイナルウーマン)は、ネットやメディア、イベントなどを通じて、 プロモーション活動を行うので、プレゼンターは自ら広告宣伝費をかけずに、 夢を実現させる上で最も大切なファン・お客様を作るだけでなく、たくさんの人に夢を発信することができます。
+                    <img src="images/pre_003.png" class="img-responsive pull-right .img-05">
+                </p>
+                <p class="clearfix">&nbsp;</p>
+            </li>
+
+            <li>
+                <a href="#" class="full-width"><h3>オリジナルなお返し</h3></a>
+                <p>
+                    フォローしてくれるエンジェルに対して、フォローしてもらうだけでなく、お返しをします。 BYNAL WOMAN(バイナルウーマン)は、融資や寄付とは異なるため、エンジェルに対して、 株式や金利といった難しいものではなく、 プロジェクトにまつわる他では手に入らないオリジナルのモノやサービス・空間や時間を、 リターンというお返しをします。
+                    <img src="images/pre_004.png" class="img-responsive img-06">
+                </p>
+                <p class="clearfix">&nbsp;</p>
+            </li>
+
+            <li>
+                <a href="#" class="full-width"><h3>実現に向けてサポート</h3></a>
+                <p>プレゼンターになりたい女性の中には自分を宣伝するための写真や動画などの素材をもっていない、 モノ作りであればそもそも作り方がわからないという方もたくさんいると思います。 BYNAL WOMAN(バイナルウーマン)はそんな方のために、サポートサービスをご用意しております。</p>
+                <img src="images/pre_005.png" class="img-responsive img-07">
+            <div class="button-white col-xs-6 btn-01">
+                <a href="#link5" class="bg-white"><h3>サポートとは</h3></a>
+            </div>
+            </li>
+        </ul>
+        <p class="clearfix">&nbsp;</p>
+        <img src="images/pre_flow.png" class="img-responsive" style="width: 100%">
+
+        <!--
+        <div class="button-action">
+            <a href="#" class="bg-white medium-width link-1 btn-02"><h3>プロジェクトを始める</h3></a>
+            <a href="#" class="bg-white medium-width link-0 btn-03"><h3>サポートとは</h3></a>
+            <p class="clearfix">&nbsp;</p>
+        </div>
+        -->
+
+        <div class="wrap01">
+        <h3 class="title" id="link5">サポートとは</h3>
+        <p>プレゼンターになりたい女性の中には、自分を宣伝するための写真や動画などの素材をもっていない、 モノ作りであれば、そもそも作り方がわからないという方もたくさんいると思います。 そんな方のために、サポートサービスもご用意しております。</p>
+
+        <ul class="list_display">
+            <li>
+                <a href="#" class="full-width"><h3>写真・動画</h3></a>
+                <p>
+                    テレビ・雑誌・ファッションショーなどで撮影・編集しているプロから若手の撮影・編集するセミプロまで、 幅広いクリエイターをご用意しておりますので、金額に応じて撮影スタッフ選ぶことができます。
+                    <img src="images/support_001.png" class="img-responsive pull-right img-08">
+                </p>
+                <p class="clearfix">&nbsp;</p>
+            </li>
+
+            <li>
+                <a href="#" class="full-width"><h3>製品作り</h3></a>
+                <p>
+                    プレゼンターの女性がプロジェクトを企画するうえで必要になる様々な業者様（生産工場やシステム開発など）を、 BYNAL WOMAN(バイナルウーマン)と提携する国内外の企業を優先的にご紹介させていただきます。
+                    <img src="images/support_002.png" class="img-responsive pull-right img-09">
+                </p>
+                <p class="clearfix">&nbsp;</p>
+            </li>
+
+           <li> 
+                <a href="#" class="full-width"><h3>達成後のプロモーション</h3></a>
+                <p>
+                    掲載期間を終え、実際にプレゼンターの女性が目標金額に達成したあとも、 BYNAL WOMAN(バイナルウーマン)では達成後の状況もご紹介させていただきます。 プレゼンターの女性はその後のPRにもなりますし、エンジェルの方もその夢のストーリーの続きを見ることができます。
+                    <img src="images/support_003.png" class="img-responsive pull-right img-10">
+                </p>
+                <p class="clearfix">&nbsp;</p>
+            </li>
+        </ul>
+        <p class="clearfix">&nbsp;</p>
+        <!--
+        <div class="button-action btn-special-01">
+            <a href="#" class="bg-white medium-width link-1 link-special-01"><h3>プロジェクトを始める</h3></a>
+        </div>
+        -->
+        </div>
+
+        <h3 class="title title-margin" id="link6">エンジェルとは</h3>
+        <p>BYNAL WOMAN(バイナルウーマン)で、夢や目標を、事業やサービスとしてカタチにしたい女性が掲載したプロジェクトに、 共感しフォロー(支援)する人のことをいいます。</p>
+
+        <ul class="list_display">
+            <li>
+                <a href="#" class="full-width"><h3>少額からフォロー可能</h3></a>
+                <p>
+                    支援金額やお返しはプレゼンターが自ら設定しているので、 エンジェルは、夢を持っているたくさんのプレゼンターの女性の中から、 共感した夢をカタチにするために必要な活動資金を、インターネットを通じ、 “500円～”という少額から支援することができます。
+                    <img src="images/angel_001.png" class="img-responsive img-11">
+                </p>
+                <p class="clearfix">&nbsp;</p>
+            </li>
+
+            <li>
+                <a href="#" class="full-width"><h3>少額からフォロー可能</h3></a>
+                <p>
+                    BYNAL WOMAN(バイナルウーマン)は、融資や寄付とは異なるため、 エンジェルのあなたに対して、株式や金利といった難しいものではなく、 プロジェクトにまつわる他では手に入らないオリジナルのモノやサービス・空間や時間を、 リターン(お返し)という形で、受け取ることができます。
+                    <img src="images/pre_004.png" class="img-responsive img-12">
+                </p>
+                <p class="clearfix">&nbsp;</p>
+            </li>
+
+            <li>
+                <a href="#" class="full-width"><h3>メッセージで応援</h3></a>
+                <p>
+                    フォロー(支援)しているプレゼンターのプロジェクト掲載期間中は、 BYNAL WOMAN(バイナルウーマン)のサイト上で、直接プレゼンターとメッセージのやりとりができるため、 リアルタイムで夢を応援することができます。
+                    <img src="images/angel_003.png" class="img-responsive img-13">
+                </p>
+                <p class="clearfix">&nbsp;</p>
+            </li>
+        </ul>
+        <div class="button-action btn-special-02">
+            <a href="#top" class="bg-white medium-width link-1 link-special-02"><h3>ページトップ</h3></a>
+        </div>
+    </div>
+</body>
+</html>

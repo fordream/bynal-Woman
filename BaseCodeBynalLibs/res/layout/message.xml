@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sharecontact_bg"
+    android:orientation="vertical" >
+
+    <org.acv.bynal.views.HeaderView
+        android:id="@+id/headerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </org.acv.bynal.views.HeaderView>
+
+    <RelativeLayout
+        android:id="@+id/mfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/messagelistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/transfer" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/mesage_block"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/message_5"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/mesage_block_content"
+                android:layout_width="@dimen/dimen_300dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/message_6"
+                >
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen_4dp"
+                    android:layout_marginLeft="@dimen/dimen_2dp"
+                    android:id="@+id/mesage_block_content_1"
+                    android:layout_width="@dimen/dimen_298dp"
+                    android:weightSum="3"
+                    android:layout_height="@dimen/dimen_33dp"
+                    android:gravity="center|left" >
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/dimen_98dp"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/item1_img"
+                            android:layout_marginRight="@dimen/dimen_2dp"
+                            android:layout_width="@dimen/dimen_16dp"
+                            android:layout_height="@dimen/dimen_16dp" />
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:id="@+id/item1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_32dp"
+                            android:gravity="center"
+                            android:text="ABCDXX XXXXX"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/dimen_10dp" />
+                    </LinearLayout>
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:visibility="gone"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/message_menu_5" />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="@dimen/dimen_98dp"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/item2_img"
+                         android:layout_marginRight="@dimen/dimen_2dp"
+                            android:layout_width="@dimen/dimen_16dp"
+                            android:layout_height="@dimen/dimen_16dp" />
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:id="@+id/item2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_32dp"
+                            android:gravity="center"
+                            android:text="ABCD"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/dimen_10dp" />
+
+                    </LinearLayout>
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:visibility="gone"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/message_menu_5" />
+
+                    <LinearLayout
+                         android:gravity="center"
+                      
+                        android:layout_width="@dimen/dimen_98dp"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/item3_img"
+                            android:layout_marginRight="@dimen/dimen_2dp"
+                            android:layout_width="@dimen/dimen_16dp"
+                            android:layout_height="@dimen/dimen_16dp" />
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:id="@+id/item3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_32dp"
+                            android:gravity="center_vertical"
+                            android:text="abcd"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/dimen_10dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <org.acv.bynal.views.LoadingView
+            android:id="@+id/message_loadingview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </org.acv.bynal.views.LoadingView>
+
+    </RelativeLayout>
+
+</LinearLayout>

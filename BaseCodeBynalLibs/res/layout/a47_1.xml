@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/a47_1_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a47_1_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/xml_a47_header"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/a47_1_x"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dimen_7dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/a47_1_x" />
+
+        <org.acv.bynal.views.BaseBoldTextView
+            android:id="@+id/headertextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:text="新しい届け住所を入力"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_13dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#b5b5b5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30dp" >
+
+        <org.acv.bynal.views.BaseTextView
+            android:id="@+id/BaseBoldTextView02"
+            android:layout_width="@dimen/dimen_130dp"
+            android:layout_height="match_parent"
+            android:background="#e6e6e6"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:text="受取人氏名"
+            android:textColor="#282828"
+            android:textSize="@dimen/dimen_10dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#b5b5b5" />
+
+        <LinearLayout
+            android:id="@+id/BaseBoldTextView01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:text="新しい届け住所を入力"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_13dp"
+            android:textStyle="bold" >
+
+            <org.acv.bynal.views.BaseEditText
+                android:id="@+id/a47_1_1"
+                style="@style/bynal_edit_text_height_27"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_27dp"
+                android:gravity="center|left"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/dimen_10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#b5b5b5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30dp" >
+
+        <org.acv.bynal.views.BaseTextView
+            android:layout_width="@dimen/dimen_130dp"
+            android:layout_height="match_parent"
+            android:background="#e6e6e6"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:text="郵便番号"
+            android:textColor="#282828"
+            android:textSize="@dimen/dimen_10dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#b5b5b5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:text="新しい届け住所を入力"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_13dp"
+            android:textStyle="bold" >
+
+            <org.acv.bynal.views.BaseEditText
+                android:id="@+id/a47_1_2"
+                style="@style/bynal_edit_text_height_27"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_27dp"
+                android:gravity="center|left"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:maxLength="3"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="@dimen/dimen_10dp" >
+            </org.acv.bynal.views.BaseEditText>
+
+            <org.acv.bynal.views.BaseTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text=" - "
+                android:textColor="#282828"
+                android:textSize="@dimen/dimen_10dp" />
+
+            <org.acv.bynal.views.BaseEditText
+                android:id="@+id/a47_1_3"
+                style="@style/bynal_edit_text_height_27"
+                android:layout_width="@dimen/dimen_80dp"
+                android:layout_height="@dimen/dimen_27dp"
+                android:gravity="center|left"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textSize="@dimen/dimen_10dp" >
+            </org.acv.bynal.views.BaseEditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#b5b5b5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30dp" >
+
+        <org.acv.bynal.views.BaseTextView
+            android:layout_width="@dimen/dimen_130dp"
+            android:layout_height="match_parent"
+            android:background="#e6e6e6"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:text="配送先住所"
+            android:textColor="#282828"
+            android:textSize="@dimen/dimen_10dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#b5b5b5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:text="新しい届け住所を入力"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_13dp"
+            android:textStyle="bold" >
+
+            <org.acv.bynal.views.BaseEditText
+                android:id="@+id/a47_1_4"
+                style="@style/bynal_edit_text_height_27"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_27dp"
+                android:gravity="center|left"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="@dimen/dimen_10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#b5b5b5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30dp" >
+
+        <org.acv.bynal.views.BaseTextView
+            android:layout_width="@dimen/dimen_130dp"
+            android:layout_height="match_parent"
+            android:background="#e6e6e6"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:text="連絡先（ハイフンなし）"
+            android:textColor="#282828"
+            android:textSize="@dimen/dimen_10dp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#b5b5b5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_5dp"
+            android:paddingRight="@dimen/dimen_5dp"
+            android:text="新しい届け住所を入力"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_13dp"
+            android:textStyle="bold" >
+
+            <org.acv.bynal.views.BaseEditText
+                android:id="@+id/a47_1_5"
+                style="@style/bynal_edit_text_height_27"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_27dp"
+                android:gravity="center|left"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="@dimen/dimen_10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#b5b5b5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/xml_a47_footer"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <org.acv.bynal.views.BaseBoldTextView
+            android:id="@+id/a47_1_btn"
+            style="@style/v3_button"
+            android:layout_width="@dimen/dimen_90dp"
+            android:layout_height="@dimen/dimen_33dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="確認"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

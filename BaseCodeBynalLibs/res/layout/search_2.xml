@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v3_bg"
+    android:orientation="vertical" >
+
+   	<LinearLayout
+   	    android:layout_width="@dimen/dimen_300dp"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginLeft="@dimen/dimen_10dp"
+   	    android:layout_marginRight="@dimen/dimen_10dp"
+   	    android:layout_marginTop="@dimen/dimen_12dp"
+   	    android:orientation="horizontal" >
+		<LinearLayout
+   	    	android:layout_width="@dimen/dimen_42dp"
+   	        android:layout_height="@dimen/dimen_40dp">
+			<ImageView
+			    android:id="@+id/v3home_pager_have_left"
+			    android:layout_width="@dimen/dimen_25dp"
+			    android:layout_height="@dimen/dimen_20dp"
+			    android:layout_marginTop="@dimen/dimen_12dp"
+			    android:layout_marginLeft="@dimen/dimen_6dp"
+			    android:visibility="gone"
+			    android:src="@drawable/icon_setting_a" />
+			<ImageView
+			    android:id="@+id/imageView1_2"
+			    android:layout_width="@dimen/dimen_25dp"
+			    android:layout_height="@dimen/dimen_20dp"
+			    android:layout_marginTop="@dimen/dimen_12dp"
+			    android:layout_marginLeft="@dimen/dimen_6dp"
+			    android:visibility="visible"
+			    android:src="@drawable/icon_setting_b" />
+		</LinearLayout>
+   	    <!-- <EditText
+   	        android:id="@+id/txtSearch22"
+   	        android:layout_width="@dimen/dimen_215dp"
+   	        android:layout_height="@dimen/dimen_35dp"
+   	        android:background="@drawable/search_bg"
+   	        android:ems="10"
+   	        android:singleLine="true"
+   	        android:inputType="text"
+   	        android:paddingLeft="10dp"
+   	        android:scaleType="fitXY"
+   	        android:paddingRight="0dp" 
+   	        android:hint="全体から検索"
+   	        android:textColorHint="#636363"
+   	        android:textSize="@dimen/dimen_11dp"
+   	        android:imeOptions="actionSearch">
+
+   	        <requestFocus />
+   	    </EditText> -->
+   	    <LinearLayout
+	   	    android:layout_width="@dimen/dimen_255dp"
+	   	    android:layout_height="@dimen/dimen_42dp"
+	   	    android:background="@drawable/profile_text_field"
+	   	    android:layout_marginTop="@dimen/dimen_2dp"
+	   	    android:orientation="horizontal" >
+   	    		<EditText
+		   	        android:id="@+id/txtSearch"
+		   	        android:layout_width="@dimen/dimen_220dp"
+		   	        android:layout_height="@dimen/dimen_42dp"
+		   	        android:background="@null"
+		   	        android:ems="10"
+		   	        android:singleLine="true"
+		   	        android:inputType="text"
+		   	        android:paddingLeft="10dp"
+		   	        android:scaleType="fitXY"
+		   	        android:paddingRight="0dp" 
+		   	        android:hint="全体から検索"
+		   	        android:textColorHint="#636363"
+		   	        android:textSize="@dimen/dimen_11dp"
+		   	        android:imeOptions="actionSearch">
+		
+		   	        <requestFocus />
+		   	    </EditText>
+		   	     <ImageView
+		   	        android:id="@+id/imageView2"
+		   	        android:layout_width="@dimen/dimen_30dp"
+		   	        android:layout_height="@dimen/dimen_30dp"
+		   	        android:padding="@dimen/dimen_5dp"
+		   	        android:paddingRight="@dimen/dimen_15dp"
+		   	        android:scaleType="fitXY"
+		   	        android:layout_marginTop="@dimen/dimen_5dp"
+		   	        android:layout_marginBottom="@dimen/dimen_5dp"
+		   	        android:layout_marginRight="@dimen/dimen_15dp"
+		   	        android:visibility="invisible"
+		   	        android:src="@drawable/search_icon_delete" />
+   		</LinearLayout>
+
+   	    
+
+   	</LinearLayout>
+    <LinearLayout
+   	    android:layout_width="match_parent"
+   	    android:layout_height="match_parent"
+   	    android:orientation="vertical" >
+   	    <org.acv.bynal.views.BaseTextView
+	    android:id="@+id/pm_err_message"
+	    style="@style/error_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="left"
+	    android:padding="@dimen/dimen_10dp"
+	    android:visibility="gone" />
+   	    <ListView 
+	    android:id="@+id/listview"
+	    android:layout_width="match_parent"
+	    android:dividerHeight="0dp"
+    	android:divider="@null"
+    	android:listSelector="@drawable/transfer"
+        android:layout_height="wrap_content">
+	
+		</ListView>
+   	</LinearLayout>
+    
+</LinearLayout>    

@@ -1,0 +1,97 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (434C41535326494C453041525345520E4350500AB6), pid=380, tid=6280
+#
+# Java VM: Java HotSpot(TM) Client VM (1.6.0-b105 mixed mode)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00238000):  JavaThread "Unknown thread" [_thread_in_vm, id=6280]
+
+Stack: [0x00240000,0x00290000)
+[error occurred during error reporting, step 110, id 0xc00000fd]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [javaw.exe+0xc07c]
+C  [javaw.exe+0x7d35]
+C  [kernel32.dll+0x13677]
+C  [ntdll.dll+0x39d72]
+C  [ntdll.dll+0x39d45]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+VM state:not at safepoint (not fully initilizated)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 960K, used 0K [0x04480000, 0x04580000, 0x04960000)
+  eden space 896K,   0% used [0x04480000, 0x04480000, 0x04560000)
+  from space 64K,   0% used [0x04560000, 0x04560000, 0x04570000)
+  to   space 64K,   0% used [0x04570000, 0x04570000, 0x04580000)
+ tenured generation   total 4096K, used 0K [0x04960000, 0x04d60000, 0x08480000)
+   the space 4096K,   0% used [0x04960000, 0x04960000, 0x04960200, 0x04d60000)
+ compacting perm gen  total 12288K, used 100K [0x08480000, 0x09080000, 0x0c480000)
+   the space 12288K,   0% used [0x08480000, 0x08499058, 0x08499200, 0x09080000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00423000 	C:\Program Files (x86)\Java\jre1.6.0\bin\javaw.exe
+0x77920000 - 0x77aa0000 	C:\Windows\SysWOW64\ntdll.dll
+0x769c0000 - 0x76ac0000 	C:\Windows\syswow64\kernel32.dll
+0x76640000 - 0x76686000 	C:\Windows\syswow64\KERNELBASE.dll
+0x757f0000 - 0x75890000 	C:\Windows\syswow64\ADVAPI32.dll
+0x76f10000 - 0x76fbc000 	C:\Windows\syswow64\msvcrt.dll
+0x76d30000 - 0x76d49000 	C:\Windows\SysWOW64\sechost.dll
+0x77020000 - 0x77110000 	C:\Windows\syswow64\RPCRT4.dll
+0x75490000 - 0x754f0000 	C:\Windows\syswow64\SspiCli.dll
+0x75480000 - 0x7548c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x754f0000 - 0x755f0000 	C:\Windows\syswow64\USER32.dll
+0x76ba0000 - 0x76c30000 	C:\Windows\syswow64\GDI32.dll
+0x759b0000 - 0x759ba000 	C:\Windows\syswow64\LPK.dll
+0x76830000 - 0x768cd000 	C:\Windows\syswow64\USP10.dll
+0x77190000 - 0x771f0000 	C:\Windows\system32\IMM32.DLL
+0x771f0000 - 0x772bc000 	C:\Windows\syswow64\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\Program Files (x86)\Java\jre1.6.0\bin\msvcr71.dll
+0x6d7c0000 - 0x6da07000 	C:\Program Files (x86)\Java\jre1.6.0\bin\client\jvm.dll
+0x71900000 - 0x71932000 	C:\Windows\system32\WINMM.dll
+0x70fe0000 - 0x7102b000 	C:\Windows\system32\apphelp.dll
+0x6d310000 - 0x6d318000 	C:\Program Files (x86)\Java\jre1.6.0\bin\hpi.dll
+0x778f0000 - 0x778f5000 	C:\Windows\syswow64\PSAPI.DLL
+0x6d770000 - 0x6d77c000 	C:\Program Files (x86)\Java\jre1.6.0\bin\verify.dll
+0x6d3b0000 - 0x6d3cf000 	C:\Program Files (x86)\Java\jre1.6.0\bin\java.dll
+0x6d7b0000 - 0x6d7bf000 	C:\Program Files (x86)\Java\jre1.6.0\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:C:\Users\teemo\android-sdks\platforms\android-14\android.jar
+java_command: com.acv.libs.base.CommonAndroid$FONT
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.6.0
+PATH=C:/Program Files (x86)/Java/jre1.6.0/bin/client;C:/Program Files (x86)/Java/jre1.6.0/bin;C:/Program Files (x86)/Java/jre1.6.0/lib/i386;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\nodejs\;C:\Users\teemo\android-sdks;C:\Users\teemo\android-sdks\tools;C:\Program Files (x86)\Java\jdk1.6.0\bin;ANT_HOME\bin;C:\Program Files (x86)\Java\jdk1.6.0\bin;C:\Users\teemo\apache-ant-1.9.4\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\TortoiseSVN\bin;C:\Users\teemo\AppData\Roaming\npm;D:\Setup\eclipse\eclipse - acv;
+USERNAME=teemo
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7600 
+
+CPU:total 4 family 6, cmov, cx8, fxsr, mmx, sse, sse2
+
+Memory: 4k page, physical 4194303k(4194303k free), swap 4194303k(4194303k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.6.0-b105) for windows-x86, built on Nov 29 2006 00:48:48 by "java_re" with unknown MS VC++:1310
+

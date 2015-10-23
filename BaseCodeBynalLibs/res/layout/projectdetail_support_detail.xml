@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pj_detail_support_detail_m_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v3_bg"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <org.acv.bynal.views.HeaderView
+        android:id="@+id/pj_detail_support_detail_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </org.acv.bynal.views.HeaderView>
+
+    <ScrollView
+        android:id="@+id/detail_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- aaaaaaaaaaaa -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- top -->
+
+            <LinearLayout
+                android:id="@+id/support_detail_more"
+                android:layout_width="@dimen/dimen_300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/detail_support_confirm_box"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10dp" >
+
+                <LinearLayout
+                    android:id="@+id/support_detail_more3"
+                    android:layout_width="@dimen/dimen_280dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:id="@+id/support_detail_value11"
+                        android:layout_width="@dimen/dimen_5dp"
+                        android:layout_height="@dimen/dimen_5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/support_icon"
+                        android:gravity="center" />
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:id="@+id/support_detail_value13"
+                        android:layout_width="@dimen/dimen_270dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen_3dp"
+                        android:text="ボタンの２度押しは絶対に行わないでください。\nまた、ブラウザの戻るボタンや更新ボタンも絶対に使用しないでください。二重請求となる恐れがございます。"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/support_detail_more1"
+                    android:layout_width="@dimen/dimen_280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_3dp"
+                    android:layout_marginTop="@dimen/dimen_3dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout01"
+                        android:layout_width="@dimen/dimen_280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:orientation="horizontal" >
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:id="@+id/BaseTextView01"
+                            android:layout_width="@dimen/dimen_5dp"
+                            android:layout_height="@dimen/dimen_5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/support_icon"
+                            android:gravity="center" />
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:id="@+id/BaseTextView02"
+                            android:layout_width="@dimen/dimen_270dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dimen_3dp"
+                            android:text="処理が完了するまで５～１５秒程度かかりますが、そのままお待ちください。 "
+                            android:textColor="#666666"
+                            android:textSize="@dimen/dimen_12dp" />
+                    </LinearLayout>
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:id="@+id/support_detail_value12"
+                        android:layout_width="@dimen/dimen_5dp"
+                        android:layout_height="@dimen/dimen_5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/support_icon"
+                        android:gravity="center" />
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:id="@+id/support_detail_desc11"
+                        android:layout_width="@dimen/dimen_270dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen_3dp"
+                        android:text="処理が完了するまで５～１５秒程度かかりますが、そのままお待ちください。 "
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_280dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_3dp"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:orientation="horizontal" >
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:layout_width="@dimen/dimen_5dp"
+                            android:layout_height="@dimen/dimen_5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/support_icon"
+                            android:gravity="center" />
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:layout_width="@dimen/dimen_270dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dimen_3dp"
+                            android:text="（ネットワークの混雑状況により、それ以上時間がかかる場合もございます。） "
+                            android:textColor="#666666"
+                            android:textSize="@dimen/dimen_12dp" />
+                    </LinearLayout>
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:layout_width="@dimen/dimen_5dp"
+                        android:layout_height="@dimen/dimen_5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/support_icon"
+                        android:gravity="center" />
+
+                    <org.acv.bynal.views.BaseTextView
+                        android:layout_width="@dimen/dimen_270dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dimen_3dp"
+                        android:text="処理が完了するまで５～１５秒程度かかりますが、そのままお待ちください。 "
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dimen_14dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- android:background="@drawable/detail_support_confirm_box01_top" -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_30dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/xml_a47_header"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/headertextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:text="プロジェクト支払内容"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/dimen_13dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/detail_support_confirm_box01_repeat"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_104dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/support_title_txt1"
+                            android:layout_width="@dimen/dimen_104dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingBottom="@dimen/dimen_7dp"
+                            android:paddingLeft="@dimen/dimen_12dp"
+                            android:paddingTop="@dimen/dimen_4dp"
+                            android:text="タイトル"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_196dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <org.acv.bynal.views.BaseBoldTextView
+                            android:id="@+id/support_title_txt2"
+                            android:layout_width="@dimen/dimen_196dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingBottom="@dimen/dimen_7dp"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:paddingTop="@dimen/dimen_4dp"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:background="@drawable/detail_support_confirm_line"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/detail_support_confirm_box01_repeat"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_104dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:id="@+id/support_detail_desc_txt"
+                            android:layout_width="@dimen/dimen_104dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingBottom="@dimen/dimen_11dp"
+                            android:paddingLeft="@dimen/dimen_12dp"
+                            android:paddingTop="@dimen/dimen_11dp"
+                            android:text="リターン内容"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_196dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:id="@+id/support_detail_desc"
+                            android:layout_width="@dimen/dimen_196dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingBottom="@dimen/dimen_11dp"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:paddingTop="@dimen/dimen_11dp"
+                            android:text="リターン内容"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:background="@drawable/detail_support_confirm_line"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/detail_support_confirm_box01_repeat"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_104dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:id="@+id/support_detail_date_txt"
+                            android:layout_width="@dimen/dimen_104dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingBottom="@dimen/dimen_11dp"
+                            android:paddingLeft="@dimen/dimen_12dp"
+                            android:paddingTop="@dimen/dimen_11dp"
+                            android:text="提供開始日"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_196dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:id="@+id/support_detail_date"
+                            android:layout_width="@dimen/dimen_196dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingBottom="@dimen/dimen_11dp"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:paddingTop="@dimen/dimen_11dp"
+                            android:text="提供開始日"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:background="@drawable/detail_support_confirm_line"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/detail_support_confirm_box01_repeat"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_104dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:id="@+id/support_detail_value_txt"
+                            android:layout_width="@dimen/dimen_104dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingBottom="@dimen/dimen_0dp"
+                            android:paddingLeft="@dimen/dimen_12dp"
+                            android:paddingTop="@dimen/dimen_11dp"
+                            android:text="支援金額"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_196dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" >
+
+                        <org.acv.bynal.views.BaseTextView
+                            android:id="@+id/support_detail_value"
+                            android:layout_width="@dimen/dimen_196dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:paddingBottom="@dimen/dimen_0dp"
+                            android:paddingLeft="@dimen/dimen_10dp"
+                            android:paddingTop="@dimen/dimen_11dp"
+                            android:text="支援金額"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_300dp"
+                    android:layout_height="@dimen/dimen_11dp"
+                    android:background="@drawable/detail_support_confirm_box01_bot"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <org.acv.bynal.views.A47_2projectdetail_support_detail_contentView
+                android:id="@+id/a47_2projectdetail_support_detail_contentView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </org.acv.bynal.views.A47_2projectdetail_support_detail_contentView>
+
+            <LinearLayout
+                android:id="@+id/support_detail_content2"
+                android:layout_width="@dimen/dimen_300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:gravity="center" >
+
+                <org.acv.bynal.views.BaseTextView
+                    android:id="@+id/support_detail_btcancel"
+                    android:layout_width="@dimen/dimen_85dp"
+                    android:layout_height="@dimen/dimen_35dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/detail_support_confirm_button1"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <org.acv.bynal.views.BaseTextView
+                    android:id="@+id/support_detail_btnok"
+                    android:layout_width="@dimen/dimen_85dp"
+                    android:layout_height="@dimen/dimen_35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/detail_support_confirm_button2"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="header_project_detail">プロジェクト詳細</string>
+	<string name="header_project_preview">プロジェクト概要</string>
+    <string name="menu_project_detail_info">プロジェクト情報 </string>
+	<string name="menu_project_detail_tag">タグ・マネジャー </string>
+    <string name="menu_project_detail_report">活動報告</string> <!-- レポート -->
+    <string name="menu_project_detail_angel">エンジェル</string>
+    <string name="menu_project_detail_comment">コメント</string>
+    
+    <string name="header_project_detail_support">支援</string>
+    <string name="header_project_detail_support_confirm">確認する</string>
+    <string name="header_project_detail_info">プロジェクト情報</string>
+	<string name="header_project_detail_tag">タグ・マネジャー </string>
+    <string name="header_project_detail_report">レポート</string>
+    <string name="header_project_detail_angel">エンジェル</string>
+    <string name="header_project_detail_comment">コメント</string>
+    
+    <string name="project_detail_share_facebook">Facebook共有</string>
+    <string name="project_detail_share_twitter">Twitter共有</string>
+    <string name="project_detail_share_bookmark">はてなブックマークに追加</string><!-- メールで共有 -->
+    <string name="project_detail_share_contact">メールで共有</string><!-- メールで共有」に変更 -->
+    
+    <string name="tag_delete_confirm">タグを削除しますか？</string>
+    <string name="tag_add_error">タグが追加できませんでした。</string>
+    
+    <string name="report_postdate">更新日:</string>
+    <string name="report_commentcount">コメント</string>
+    <string name="report_addcomment_err">コメントを入力してください。</string>
+    
+    <string name="project_detail_support_btsupport"> 円  </string>
+    <string name="project_detail_support_limit1">(在庫制限: </string>
+    <string name="project_detail_support_limit2"> 個)</string>
+    <string name="project_detail_support_backer">支援数: </string>
+    <string name="project_detail_support_err_donotsupport">決済APIがありません。後で対応します。</string><!-- Do not support -->
+    <string name="project_detail_support_err_projectended">このプロジェクトは終了しました。</string>
+    <string name="project_info_sendmessage_txt">メッセージを送る</string>
+     <string name="project_detail_comment_san">さん</string>
+     
+    <string name="err_sendmessage_userid_invalid">このプロジェクトを作成したアカウントからはコメントできません。</string>
+    
+    <string name="payment_support_paypal">Service Paypal</string>
+    <string name="payment_support_stripe">Service Stripe</string>
+    <string name="payment_dialog_title">決済方法</string>
+    <string name="payment_user_cancel">キャンセルしました</string>
+    
+    <string name="add_to_favorite">お気に入りに追加しました</string>
+    
+    <string name="pj_detail_report_null">まだ活動報告がありません。</string>
+    <string name="pj_detail_angel_null">まだ支援者がいません。</string>
+    <string name="pj_detail_comment_null">まだコメントがありません。</string>
+</resources>

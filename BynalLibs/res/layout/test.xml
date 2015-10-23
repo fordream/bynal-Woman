@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.bynal.libs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.example.ttest.views.CustomButtomView
+        android:id="@+id/customButtomView1"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        custom:bgbutton="@drawable/xml_button_custom"
+        custom:textbutton="hello_world" >
+    </com.example.ttest.views.CustomButtomView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="@dimen/dimen_150dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="@drawable/xml_detail_share_1"
+        android:text="Button" />
+
+</LinearLayout>

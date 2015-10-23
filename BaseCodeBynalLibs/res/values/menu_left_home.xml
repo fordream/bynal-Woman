@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="menu_home_Login">ログイン</string>
+    <string name="menu_home_profile">Profile</string>
+    <string name="menu_home_project_manager">プロジェクト管理</string>
+    <string name="menu_home_blog">ブログ</string>
+    <string name="menu_home_message">メッセージ</string>
+    <string name="menu_home_news_event">ニュース＆イベント</string>
+    <string name="menu_home_more">もっと詳しく</string>
+    <string name="menu_home_contact_us">お問い合わせ</string>
+    <string name="menu_home_about">このサイトについて</string>
+    <string name="menu_home_help">ヘルプ</string>
+    <string name="menu_home_x1">利用規約</string>
+    <string name="menu_home_x2">特定商取引法に基づく表記</string>
+    <string name="menu_home_x3">運営会社</string>
+    <string name="menu_home_logout">ログアウト</string>
+	<string name="header_message_room">メッセージルーム</string>
+</resources>

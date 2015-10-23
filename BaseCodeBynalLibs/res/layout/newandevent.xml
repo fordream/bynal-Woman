@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sharecontact_bg"
+    android:orientation="vertical" >
+
+    <org.acv.bynal.views.HeaderView
+        android:id="@+id/headerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </org.acv.bynal.views.HeaderView>
+
+    <ListView
+        android:id="@+id/newandevent_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerView1"
+        android:divider="@null"
+        android:dividerHeight="0dp" >
+
+    </ListView>
+
+    <org.acv.bynal.views.LoadingView
+        android:id="@+id/newandevent_loadingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/newandevent_listview" >
+
+    </org.acv.bynal.views.LoadingView>
+
+</RelativeLayout>

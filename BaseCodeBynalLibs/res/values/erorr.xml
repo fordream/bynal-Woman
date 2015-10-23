@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <string name="error_login">ログインエラー</string>
+    <string name="error_register">レジスタエラー</string>
+    <string name="checkemailandpasssword">入力してくださいメールアドレスとパスワード</string>
+    <string name="inputemailandusername">ご入力のメールアドレスとユーザー名</string>
+    <string name="checkpassandrepass">入力されたパスワードと再パスワードを喜ば</string>
+    <string name="checkemailandusername">ご入力のメールアドレスとユーザー名</string>
+    <string name="pleaseinputemail">入力してくださいメール</string>
+    <string name="cannotsendtoserver_pleasechecknetwork">サーバーに送信することはできません、ネットワークをチェックしてください</string>
+    -->
+    <!-- error message -->
+    <string name="error_message_input_email">Eメールを入力してください。</string>
+    <string name="error_message_input_password">パスワードをご入力ください。</string>
+    <string name="error_message_input_username">ユーザ名をご入力ください。</string>
+    <string name="error_message_input_name">お名前をご入力ください。</string>
+    <string name="error_message_connect_server_fail">サーバーに接続できません。ネットワークを確認してもう一度接続してください。</string>
+    <string name="error_message_login_fail">ログインに失敗しました。</string>
+    <string name="error_message_register_fail">登録が失敗しました。</string>
+    <string name="error_message_check_network">ネットワークがありません。ネットワークの接続を確認してもう一度実行してください。</string>
+    <string name="error_message_check_passwordandrepassword">パスワードとパスワード(確認)が違いました。パスワードを確認してもう一度入力してください。</string>
+    <string name="error_message_input_title">タイトルをご入力ください。</string>
+    <string name="error_message_input_description">内容を入力してください。</string>
+    <string name="error_message_pleaselogin">ログインしてください。</string>
+    <string name="error_message_session_login">ログインセッションが無く成りました。再ログインしてください。</string>
+    <string name="error_message_payment_not_support">決済APIがありません。後で対応します。</string>
+	<string name="error_message_input_email_check">メールアドレスを正しく入力してください。</string>
+      <string name="error_message_input_message">メッセージ内容を入力してください。</string>
+    
+    <!-- message -->
+    <string name="message_push">\"Bynal\" はあなたにプッシュ通知を送信します。よろしいですか？</string>
+    <string name="send_message_success">友達にアプリを提供出来ました。</string>
+  
+	<!-- message all page -->
+	<string name="error_data">データがありません。</string>
+	<string name="error_connect_server">サーバーに接続できません。\nネットワークを確認してもう一度接続してください。</string>
+	<string name="error_project_unpublic">このプロジェクトは公開されていません。</string>
+</resources>

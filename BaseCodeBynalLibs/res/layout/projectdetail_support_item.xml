@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_10dp"
+    android:orientation="vertical" >
+	<LinearLayout
+         android:id="@+id/top_1"
+	         android:layout_width="@dimen/dimen_300dp"
+	         android:layout_height="@dimen/dimen_15dp"
+	         android:orientation="vertical"
+	         android:background="@drawable/detail_report_box_top"
+	         android:layout_centerHorizontal="true"
+    		 android:gravity="center|center_vertical">
+	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/top_2"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_report_box_repeat"
+        android:layout_below="@+id/top_1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/support_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="0dp" >
+        	<LinearLayout
+	        android:id="@+id/support_item_btn"
+	        android:layout_width="@dimen/dimen_210dp"
+	        android:layout_height="@dimen/dimen_30dp"
+	        android:layout_marginBottom="@dimen/dimen_10dp"
+	        android:layout_marginTop="@dimen/dimen_10dp"
+	        android:background="@drawable/button_click_support_xml"
+	        android:gravity="center"
+	        android:orientation="horizontal"
+	        android:padding="0dp" >
+	        	<org.acv.bynal.views.BaseBoldTextView
+	            android:id="@+id/support_value"
+	            android:layout_width="@dimen/dimen_105dp"
+	            android:layout_height="@dimen/dimen_30dp"
+	            android:textSize="@dimen/dimen_15dp"
+	            android:text="value"
+	            android:paddingTop="@dimen/dimen_4dp"
+	            android:paddingRight="@dimen/dimen_2dp"
+	            android:textColor="#ffffff"
+	            android:gravity="right" />
+	        	<org.acv.bynal.views.BaseTextView
+	            android:id="@+id/support_value_txtname"
+	            android:layout_width="@dimen/dimen_105dp"
+	            android:layout_height="@dimen/dimen_30dp"
+	            android:textSize="@dimen/dimen_10dp"
+	            android:paddingTop="@dimen/dimen_8dp"
+	            android:text="フォローする "
+	            android:textColor="#ffffff"
+	            android:gravity="left" />
+        	</LinearLayout>
+         <!--   支援する -->
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/support_desc_info"
+         android:layout_width="@dimen/dimen_300dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:gravity="left"
+         android:orientation="vertical"
+         android:padding="0dp" >
+
+         <org.acv.bynal.views.BaseTextView
+             android:id="@+id/support_desc"
+             android:layout_width="@dimen/dimen_300dp"
+             android:layout_height="wrap_content"
+             android:paddingLeft="@dimen/dimen_10dp"
+             android:paddingRight="@dimen/dimen_10dp"
+             android:textColor="#000000"
+             android:text=""
+             android:textSize="@dimen/dimen_15dp" />
+
+        <org.acv.bynal.views.BaseTextView
+             android:id="@+id/support_support_num_limit"
+             android:layout_width="@dimen/dimen_300dp"
+             android:layout_height="wrap_content"
+             android:gravity="right"
+             android:paddingRight="@dimen/dimen_10dp"
+             android:textColor="#000000"
+             android:textSize="@dimen/dimen_15dp" />
+         <org.acv.bynal.views.BaseTextView
+             android:id="@+id/support_backer"
+             android:layout_width="@dimen/dimen_300dp"
+             android:layout_height="wrap_content"
+             android:gravity="right"
+             android:paddingRight="@dimen/dimen_10dp"
+             android:paddingBottom="@dimen/dimen_10dp"
+             android:textColor="#000000"
+             android:textSize="@dimen/dimen_15dp" />
+
+         
+     </LinearLayout>
+   </LinearLayout>
+   <LinearLayout
+         android:id="@+id/top_3"
+	         android:layout_width="@dimen/dimen_300dp"
+	         android:layout_height="@dimen/dimen_15dp"
+	         android:orientation="vertical"
+	         android:background="@drawable/detail_report_box_bot"
+	         android:layout_below="@+id/top_2"
+	         android:layout_centerHorizontal="true"
+        	 android:gravity="center|center_vertical">
+	</LinearLayout>
+
+</RelativeLayout>

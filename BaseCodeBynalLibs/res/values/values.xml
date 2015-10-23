@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bynal Woman</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="back">Back</string>
+    <string name="menu">Menu</string>
+    <string name="loading">Loading...</string>
+    <string name="blank"></string>
+    <string name="sharecontact">コンタクトリスト</string>
+    <string name="facebook_register">Facebookで会員登録</string>
+    <string name="twitter_register">Twitterで会員登録</string>
+    <string name="forgot_header">パスワードを忘れた</string>
+    <string name="message">受信メッセージ</string>
+    <string name="register">会員登録</string>
+    <string name="v3_register_facebook">Facebookアカウントで新規登録</string>
+    <string name="v3_register_twwiter">Twitterアカウントで新規登録</string>
+    <string name="cancel_dialog">キャンセル</string>
+    <string name="ok_dialog">Ok</string>
+    <!-- contact us -->
+    <string name="str_contactus_1">入力内容を確認する</string>
+    <string name="str_contactus_2">上記内容で送信する</string>
+    <string name="message_comfirm_sendcontactus"></string>
+    <string name="comfirm_sendcontactus_title">入力確認</string>
+
+    <!-- notification -->
+    <string name="notification_new_pj">新規プロジェクトを作成されました。</string>
+    <string name="notification_support_pj">投稿したプロジェクトが支援されました。</string>
+    <string name="notification_favorite_pj">投稿したプロジェクトがお気に入りされました。</string>
+    <string name="notification_report_pj">投稿したプロジェクトが活動報告されました。</string>
+    <string name="notification_message">新規メッセージを受信しました。</string>
+
+    <!-- share contact -->
+    <string name="share_contact_success">送信しました</string>
+    <string name="share_contact_check_email">Eメールを入力してください。\nまたはEメールを選択してください。</string>
+    <string name="uploading">アップロード…</string>
+    <string name="delivery_name_txt">配送先情報</string>
+    <string name="project_manager_title">YouTubeのBYNAL WOMAN専用チャンネルへ動画をアップロードし、\nプロジェクト画面に表示します。</string>
+    <string name="error_camera">カメラ機能は動けません。</string>
+    <string name="error_load_uri_video">動画ファイルに問題があるため、アップロードできません。他のファイルをアップロードしてください。</string>
+    <string name="error_event_calendar">このイベントは終了しました。</string>
+    <string name="bank_infor">Bank info</string>
+    <string name="a47_comfirm">配送先情報</string>
+    <string name="edit_address">届け住所編集</string>
+    <string name="add_address">新しい届け住所を入力</string>
+    <string name="add_address_success">届け先住所を登録成功しました。</string>
+    <string name="update_address_fail">届け先住所を更新成功しました。</string>
+    <string name="update_address_success">届け先住所を更新失敗しました。</string>
+    <string name="add_address_fail">届け先住所を登録失敗しました。</string>
+    <string name="editaddress_1">受取人氏名を入力してください。</string>
+    <string name="editaddress_2">郵便番号を入力してください。</string>
+    <string name="editaddress_3">配送先住所を入力してください。</string>
+    <string name="editaddress_4">連絡先を入力してください。</string>
+
+    <!-- key parse: app bynal_test -->
+    <string name="parse_app_key">fBgTKuaEgpICXDYJ8JUJPlUNj13P8q60r03vcFdA</string><!-- Y8Ur3L5IWOBnfHUUEM8fsswgDznOUydjxNDH7GSR android_test-->
+    <string name="parse_client_key">kpUwSWQjjccoj2kLOeT8yKHRDTvjI5huiwOm6dXZ</string><!-- sSYHZOl0OQpYpp758USGrrknJDsJk5gJjC5VfCxK android_test-->
+</resources>

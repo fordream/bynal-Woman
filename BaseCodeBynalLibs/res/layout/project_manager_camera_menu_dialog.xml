@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/project_manger_camera_menu_dialog_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_182dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/profile_bg_popup"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <org.acv.bynal.views.BaseBoldTextView
+            android:layout_width="@dimen/dimen_170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_3dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/project_manager_title"
+            android:textColor="#333333"
+            android:textSize="@dimen/dimen_10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:orientation="vertical" >
+
+            <org.acv.bynal.views.BaseBoldTextView
+                android:id="@+id/project_manger_camera_menu_dialog_camera001"
+                android:layout_width="@dimen/dimen_170dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:background="@drawable/profile_popup_upload01"
+                android:gravity="center|center_vertical"
+                android:text="カメラから投稿する"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dimen_11dp" />
+
+            <org.acv.bynal.views.BaseBoldTextView
+                android:id="@+id/project_manger_camera_menu_dialog_camera002"
+                android:layout_width="@dimen/dimen_170dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/profile_popup_upload02"
+                android:gravity="center|center_vertical"
+                android:text="カメラロールから投稿する"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dimen_11dp" />
+
+            <org.acv.bynal.views.BaseBoldTextView
+                android:id="@+id/project_manger_camera_menu_dialog_camera003"
+                android:layout_width="@dimen/dimen_170dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:background="@drawable/xml_cancel"
+                android:gravity="center|center_vertical"
+                android:text="キャンセル"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dimen_11dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

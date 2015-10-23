@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_main_content"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_45dp"
+    android:background="#cc0033"
+    android:orientation="vertical" >
+
+    <org.acv.bynal.views.BaseBoldTextView
+        android:id="@+id/headertextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="0.8"
+        android:shadowDy="0.8"
+        android:shadowRadius="10"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_15dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/home_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/v3_home_logo"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/headerbutton1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="@dimen/dimen_45dp"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:padding="@dimen/dimen_10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/back_xml" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+        <ImageButton
+	        android:id="@+id/headerbutton2"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="@dimen/dimen_45dp"
+	        android:layout_height="@dimen/dimen_45dp"
+	        android:background="@null"
+	        android:padding="@dimen/dimen_10dp"
+	        android:scaleType="fitXY" />
+	    <ImageButton
+	        android:id="@+id/headerbutton3"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="@dimen/dimen_45dp"
+	        android:layout_height="@dimen/dimen_45dp"
+	        android:background="@null"
+	        android:padding="@dimen/dimen_10dp"
+	        android:scaleType="fitXY" />
+    </LinearLayout>    
+    
+<!-- 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <RadioGroup
+            android:id="@+id/headerradiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:id="@+id/headerradiogroup1"
+                android:layout_width="@dimen/dimen_79dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/headerradiogroup2"
+                android:layout_width="@dimen/dimen_79dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="" />
+        </RadioGroup>
+    </LinearLayout>
+ -->
+</RelativeLayout>
